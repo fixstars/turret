@@ -1,0 +1,4 @@
+Cython
+six
+numpy
+pycuda
