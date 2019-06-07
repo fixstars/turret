@@ -1,0 +1,22 @@
+turret.loggers package
+======================
+
+Submodules
+----------
+
+turret.loggers.console\_logger module
+-------------------------------------
+
+.. automodule:: turret.loggers.console_logger
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: turret.loggers
+    :members:
+    :undoc-members:
+    :show-inheritance:

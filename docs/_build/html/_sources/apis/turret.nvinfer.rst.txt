@@ -1,0 +1,10 @@
+turret.nvinfer package
+======================
+
+Module contents
+---------------
+
+.. automodule:: turret.nvinfer
+    :members:
+    :undoc-members:
+    :show-inheritance:

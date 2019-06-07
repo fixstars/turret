@@ -20,8 +20,8 @@ sys.path.insert(0, os.path.abspath('../turret'))
 # -- Project information -----------------------------------------------------
 
 project = 'Turret'
-copyright = '2019, Fixstars Corporation'
-author = 'Fixstars Corporation'
+copyright = '2019, Fixstars Corp.'
+author = 'Fixstars Corp.'
 
 # The short X.Y version
 version = ''
@@ -131,7 +131,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'Turret.tex', 'Turret Documentation',
-     'Fixstars Corporation', 'manual'),
+     'Fixstars Corp.', 'manual'),
 ]
 
 
