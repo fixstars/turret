@@ -1,0 +1,46 @@
+turret.caffe package
+====================
+
+Submodules
+----------
+
+turret.caffe.caffe module
+-------------------------
+
+.. automodule:: turret.caffe.caffe
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.caffe.cy\_plugin\_factory\_proxy module
+----------------------------------------------
+
+.. automodule:: turret.caffe.cy_plugin_factory_proxy
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.caffe.plugin\_factory module
+-----------------------------------
+
+.. automodule:: turret.caffe.plugin_factory
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.caffe.plugin\_factory\_proxy\_bridge module
+--------------------------------------------------
+
+.. automodule:: turret.caffe.plugin_factory_proxy_bridge
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: turret.caffe
+    :members:
+    :undoc-members:
+    :show-inheritance:

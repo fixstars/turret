@@ -1,0 +1,82 @@
+turret package
+==============
+
+Subpackages
+-----------
+
+.. toctree::
+
+    turret.caffe
+    turret.int8
+    turret.layers
+    turret.loggers
+    turret.nvinfer
+    turret.plugin
+
+Submodules
+----------
+
+turret.buffer module
+--------------------
+
+.. automodule:: turret.buffer
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.engine module
+--------------------
+
+.. automodule:: turret.engine
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.foundational module
+--------------------------
+
+.. automodule:: turret.foundational
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.graph module
+-------------------
+
+.. automodule:: turret.graph
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.logger module
+--------------------
+
+.. automodule:: turret.logger
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.logger\_bridge module
+----------------------------
+
+.. automodule:: turret.logger_bridge
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.type\_check module
+-------------------------
+
+.. automodule:: turret.type_check
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: turret
+    :members:
+    :undoc-members:
+    :show-inheritance:

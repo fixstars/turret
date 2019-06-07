@@ -1,0 +1,38 @@
+turret.int8 package
+===================
+
+Submodules
+----------
+
+turret.int8.calibrator\_proxy\_bridge module
+--------------------------------------------
+
+.. automodule:: turret.int8.calibrator_proxy_bridge
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.int8.cy\_calibrator\_proxy module
+----------------------------------------
+
+.. automodule:: turret.int8.cy_calibrator_proxy
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.int8.int8\_calibrator module
+-----------------------------------
+
+.. automodule:: turret.int8.int8_calibrator
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: turret.int8
+    :members:
+    :undoc-members:
+    :show-inheritance:

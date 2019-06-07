@@ -1,0 +1,1279 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>turret package &mdash; Turret 4.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Turret
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">turret package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-turret.buffer">turret.buffer module</a></li>
+<li><a class="reference internal" href="#module-turret.engine">turret.engine module</a></li>
+<li><a class="reference internal" href="#module-turret.foundational">turret.foundational module</a></li>
+<li><a class="reference internal" href="#module-turret.graph">turret.graph module</a></li>
+<li><a class="reference internal" href="#module-turret.logger">turret.logger module</a></li>
+<li><a class="reference internal" href="#module-turret.logger_bridge">turret.logger_bridge module</a></li>
+<li><a class="reference internal" href="#module-turret.type_check">turret.type_check module</a></li>
+<li><a class="reference internal" href="#module-turret">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Turret</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>turret package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/apis/turret.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="turret-package">
+<h1>turret package<a class="headerlink" href="#turret-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="turret.caffe.html">turret.caffe package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="turret.caffe.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.caffe.html#module-turret.caffe.caffe">turret.caffe.caffe module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.caffe.html#module-turret.caffe.cy_plugin_factory_proxy">turret.caffe.cy_plugin_factory_proxy module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.caffe.html#module-turret.caffe.plugin_factory">turret.caffe.plugin_factory module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.caffe.html#module-turret.caffe.plugin_factory_proxy_bridge">turret.caffe.plugin_factory_proxy_bridge module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.caffe.html#module-turret.caffe">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="turret.int8.html">turret.int8 package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="turret.int8.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.int8.html#module-turret.int8.calibrator_proxy_bridge">turret.int8.calibrator_proxy_bridge module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.int8.html#module-turret.int8.cy_calibrator_proxy">turret.int8.cy_calibrator_proxy module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.int8.html#module-turret.int8.int8_calibrator">turret.int8.int8_calibrator module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.int8.html#module-turret.int8">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="turret.layers.html">turret.layers package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="turret.layers.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.layers.html#module-turret.layers.average_pooling_2d">turret.layers.average_pooling_2d module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.layers.html#module-turret.layers.basic_math">turret.layers.basic_math module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.layers.html#module-turret.layers.batch_normalization">turret.layers.batch_normalization module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.layers.html#module-turret.layers.bias">turret.layers.bias module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.layers.html#module-turret.layers.builtin">turret.layers.builtin module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.layers.html#module-turret.layers.leaky_relu">turret.layers.leaky_relu module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.layers.html#module-turret.layers.lstm">turret.layers.lstm module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.layers.html#module-turret.layers.lstm_v2">turret.layers.lstm_v2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.layers.html#module-turret.layers.max_average_blend_pooling_2d">turret.layers.max_average_blend_pooling_2d module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.layers.html#module-turret.layers.max_pooling_2d">turret.layers.max_pooling_2d module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.layers.html#module-turret.layers.pad">turret.layers.pad module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.layers.html#module-turret.layers.relu">turret.layers.relu module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.layers.html#module-turret.layers.repeat">turret.layers.repeat module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.layers.html#module-turret.layers.reshape">turret.layers.reshape module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.layers.html#module-turret.layers.rnn">turret.layers.rnn module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.layers.html#module-turret.layers.rnn_v2">turret.layers.rnn_v2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.layers.html#module-turret.layers.shuffle">turret.layers.shuffle module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.layers.html#module-turret.layers.sigmoid">turret.layers.sigmoid module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.layers.html#module-turret.layers.split">turret.layers.split module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.layers.html#module-turret.layers.tanh">turret.layers.tanh module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.layers.html#module-turret.layers">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="turret.loggers.html">turret.loggers package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="turret.loggers.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.loggers.html#module-turret.loggers.console_logger">turret.loggers.console_logger module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.loggers.html#module-turret.loggers">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="turret.nvinfer.html">turret.nvinfer package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="turret.nvinfer.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="turret.plugin.html">turret.plugin package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="turret.plugin.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.plugin.html#module-turret.plugin.auto_register">turret.plugin.auto_register module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.plugin.html#module-turret.plugin.cy_plugin_factory_proxy">turret.plugin.cy_plugin_factory_proxy module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.plugin.html#module-turret.plugin.cy_plugin_proxy">turret.plugin.cy_plugin_proxy module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.plugin.html#module-turret.plugin.plugin_base">turret.plugin.plugin_base module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.plugin.html#module-turret.plugin.plugin_factory">turret.plugin.plugin_factory module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.plugin.html#module-turret.plugin.plugin_factory_proxy_bridge">turret.plugin.plugin_factory_proxy_bridge module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.plugin.html#module-turret.plugin.plugin_proxy_bridge">turret.plugin.plugin_proxy_bridge module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.plugin.html#module-turret.plugin.stream">turret.plugin.stream module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.plugin.html#module-turret.plugin.temporary_stream_context">turret.plugin.temporary_stream_context module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turret.plugin.html#module-turret.plugin">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-turret.buffer">
+<span id="turret-buffer-module"></span><h2>turret.buffer module<a class="headerlink" href="#module-turret.buffer" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="turret.buffer.InferenceBuffer">
+<em class="property">class </em><code class="descclassname">turret.buffer.</code><code class="descname">InferenceBuffer</code><a class="headerlink" href="#turret.buffer.InferenceBuffer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>An object of input and output buffers for the network.</p>
+<dl class="attribute">
+<dt id="turret.buffer.InferenceBuffer.batch_size">
+<code class="descname">batch_size</code><a class="headerlink" href="#turret.buffer.InferenceBuffer.batch_size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="turret.buffer.InferenceBuffer.dimensions">
+<code class="descname">dimensions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.buffer.InferenceBuffer.dimensions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getting dimensions of data on buffer.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>str</em>) – Buffer name on the network.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">dimensions of data.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">tuple</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="turret.buffer.InferenceBuffer.get">
+<code class="descname">get</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.buffer.InferenceBuffer.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getting data from buffer.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>str</em>) – Buffer name on the network.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Data got from buffer.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">np.ndarray</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="turret.buffer.InferenceBuffer.get_device_memory">
+<code class="descname">get_device_memory</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.buffer.InferenceBuffer.get_device_memory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getting a cuda memory for the buffer data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>str</em>) – Buffer name on the network.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A cuda memory for the buffer data.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">binary</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="turret.buffer.InferenceBuffer.put">
+<code class="descname">put</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.buffer.InferenceBuffer.put" title="Permalink to this definition">¶</a></dt>
+<dd><p>Putting data on buffer.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>name</strong> (<em>str</em>) – Buffer name on the network.</li>
+<li><strong>batch</strong> (<em>np.ndarray</em>) – Data to put on buffer.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="turret.buffer.InferenceBuffer.swap">
+<code class="descname">swap</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.buffer.InferenceBuffer.swap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Swapping data on buffer.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>a</strong> (<em>str</em>) – Buffer name on the network to swap.</li>
+<li><strong>b</strong> (<em>str</em>) – Buffer name on the network to swap.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.engine">
+<span id="turret-engine-module"></span><h2>turret.engine module<a class="headerlink" href="#module-turret.engine" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="turret.engine.Binding">
+<em class="property">class </em><code class="descclassname">turret.engine.</code><code class="descname">Binding</code><a class="headerlink" href="#turret.engine.Binding" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Binding information for network inputs and outputs.</p>
+<dl class="attribute">
+<dt id="turret.engine.Binding.name">
+<code class="descname">name</code><a class="headerlink" href="#turret.engine.Binding.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of the tensor.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.engine.Binding.index">
+<code class="descname">index</code><a class="headerlink" href="#turret.engine.Binding.index" title="Permalink to this definition">¶</a></dt>
+<dd><p>The index of the buffer.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.engine.Binding.is_input">
+<code class="descname">is_input</code><a class="headerlink" href="#turret.engine.Binding.is_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if the tensor is an input.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.engine.Binding.type">
+<code class="descname">type</code><a class="headerlink" href="#turret.engine.Binding.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>The data type of the tensor.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.DataType</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.engine.Binding.dimensions">
+<code class="descname">dimensions</code><a class="headerlink" href="#turret.engine.Binding.dimensions" title="Permalink to this definition">¶</a></dt>
+<dd><p>The dimensions of the tensor.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.Dimensions</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">dimensions</code></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">index</code></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">is_input</code></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">name</code></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">type</code></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="turret.engine.BindingSet">
+<em class="property">class </em><code class="descclassname">turret.engine.</code><code class="descname">BindingSet</code><a class="headerlink" href="#turret.engine.BindingSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A set of binding informations for network inputs and outputs.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="turret.engine.ExecutionContext">
+<em class="property">class </em><code class="descclassname">turret.engine.</code><code class="descname">ExecutionContext</code><a class="headerlink" href="#turret.engine.ExecutionContext" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Context for executing inference using an engine.
+Multiple execution contexts may exist for one InferenceEngine instance,
+allowing the same engine to be used for the execution of multiple batches
+simultaneously.</p>
+<dl class="method">
+<dt id="turret.engine.ExecutionContext.create_buffer">
+<code class="descname">create_buffer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.engine.ExecutionContext.create_buffer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns InferenceBuffer for this context.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">InferenceBuffer for this context.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">turret.InferenceBuffer</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="turret.engine.ExecutionContext.enqueue">
+<code class="descname">enqueue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.engine.ExecutionContext.enqueue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Asynchronously execute inference on a batch.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>buf</strong> (<a class="reference internal" href="#turret.buffer.InferenceBuffer" title="turret.buffer.InferenceBuffer"><em>InferenceBuffer</em></a>) – InferenceBuffer for this context.</li>
+<li><strong>stream</strong> (<em>CUDA stream</em>) – A cuda stream on which the inference kernels
+will be enqueued.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="turret.engine.ExecutionContext.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.engine.ExecutionContext.execute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Synchronously execute inference on a batch.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>buf</strong> (<a class="reference internal" href="#turret.buffer.InferenceBuffer" title="turret.buffer.InferenceBuffer"><em>InferenceBuffer</em></a>) – InferenceBuffer for this context.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="turret.engine.InferenceEngine">
+<em class="property">class </em><code class="descclassname">turret.engine.</code><code class="descname">InferenceEngine</code><a class="headerlink" href="#turret.engine.InferenceEngine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>An engine for executing inference on a built network.</p>
+<dl class="attribute">
+<dt id="turret.engine.InferenceEngine.bindings">
+<code class="descname">bindings</code><a class="headerlink" href="#turret.engine.InferenceEngine.bindings" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="turret.engine.InferenceEngine.max_batch_size">
+<code class="descname">max_batch_size</code><a class="headerlink" href="#turret.engine.InferenceEngine.max_batch_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>The maximum batch size.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.engine.InferenceEngine.nlayers">
+<code class="descname">nlayers</code><a class="headerlink" href="#turret.engine.InferenceEngine.nlayers" title="Permalink to this definition">¶</a></dt>
+<dd><p>The number of layers in the network.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="turret.engine.InferenceEngine.serialize">
+<code class="descname">serialize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.engine.InferenceEngine.serialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the network to a stream.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>stream</strong> (<em>binary stream</em>) – A stream to write serialized engine.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.engine.InferenceEngine.workspace_size">
+<code class="descname">workspace_size</code><a class="headerlink" href="#turret.engine.InferenceEngine.workspace_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>The size of workspace in bytes.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="turret.engine.InferenceEngineBuilder">
+<em class="property">class </em><code class="descclassname">turret.engine.</code><code class="descname">InferenceEngineBuilder</code><a class="headerlink" href="#turret.engine.InferenceEngineBuilder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A builder for constructing inference engines.</p>
+<dl class="attribute">
+<dt id="turret.engine.InferenceEngineBuilder.average_find_iterations">
+<code class="descname">average_find_iterations</code><a class="headerlink" href="#turret.engine.InferenceEngineBuilder.average_find_iterations" title="Permalink to this definition">¶</a></dt>
+<dd><p>The number of minimization iterations in minimization.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="turret.engine.InferenceEngineBuilder.build">
+<code class="descname">build</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.engine.InferenceEngineBuilder.build" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build an inference engine.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>network</strong> (<em>turret.NetworkDefinition</em>) – The network definition.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The constructed inference engine.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">turret.InferenceEngine</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="turret.engine.InferenceEngineBuilder.create_network">
+<code class="descname">create_network</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.engine.InferenceEngineBuilder.create_network" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an empty network definition.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>dtype</strong> (<em>turret.DataType</em><em>, </em><em>optional</em>) – The data type for inference.
+Default to DataType.FLOAT.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The empty network definition.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">turret.NetworkDefinition</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.engine.InferenceEngineBuilder.debug_sync">
+<code class="descname">debug_sync</code><a class="headerlink" href="#turret.engine.InferenceEngineBuilder.debug_sync" title="Permalink to this definition">¶</a></dt>
+<dd><p>The debug sync flag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.engine.InferenceEngineBuilder.int8_calibrator">
+<code class="descname">int8_calibrator</code><a class="headerlink" href="#turret.engine.InferenceEngineBuilder.int8_calibrator" title="Permalink to this definition">¶</a></dt>
+<dd><p>INT8 calibration interface.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.engine.InferenceEngineBuilder.max_batch_size">
+<code class="descname">max_batch_size</code><a class="headerlink" href="#turret.engine.InferenceEngineBuilder.max_batch_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>The maximum batch size.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.engine.InferenceEngineBuilder.max_workspace_size">
+<code class="descname">max_workspace_size</code><a class="headerlink" href="#turret.engine.InferenceEngineBuilder.max_workspace_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>The maximum workspace size in bytes.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.engine.InferenceEngineBuilder.min_find_iterations">
+<code class="descname">min_find_iterations</code><a class="headerlink" href="#turret.engine.InferenceEngineBuilder.min_find_iterations" title="Permalink to this definition">¶</a></dt>
+<dd><p>The number of minimization iterations in averaging.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="turret.engine.InferenceEngineBuilder.platform_has_fast_fp16">
+<code class="descname">platform_has_fast_fp16</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.engine.InferenceEngineBuilder.platform_has_fast_fp16" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True when the platform has fast native fp16.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="turret.engine.InferenceEngineBuilder.platform_has_fast_int8">
+<code class="descname">platform_has_fast_int8</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.engine.InferenceEngineBuilder.platform_has_fast_int8" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True when the platform has fast native int8.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="turret.engine.InferenceRuntime">
+<em class="property">class </em><code class="descclassname">turret.engine.</code><code class="descname">InferenceRuntime</code><a class="headerlink" href="#turret.engine.InferenceRuntime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A runtime to allow a serialized engine to be deserialized.</p>
+<dl class="method">
+<dt id="turret.engine.InferenceRuntime.deserialize_engine">
+<code class="descname">deserialize_engine</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.engine.InferenceRuntime.deserialize_engine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deserialize the network using a stream.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>stream</strong> (<em>binary stream</em>) – A stream to read serialized engine.</li>
+<li><strong>plugin_factory</strong> (<em>turret.PluginFactory</em><em>, </em><em>optional</em>) – The plugin
+factory. Default to None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Deserialized InferenceEngine.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">turret.InferenceEngine</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.foundational">
+<span id="turret-foundational-module"></span><h2>turret.foundational module<a class="headerlink" href="#module-turret.foundational" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="turret.foundational.DataType">
+<em class="property">class </em><code class="descclassname">turret.foundational.</code><code class="descname">DataType</code><a class="headerlink" href="#turret.foundational.DataType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The type of weights and tensors.</p>
+<dl class="attribute">
+<dt id="turret.foundational.DataType.FLOAT">
+<code class="descname">FLOAT</code><a class="headerlink" href="#turret.foundational.DataType.FLOAT" title="Permalink to this definition">¶</a></dt>
+<dd><p>FP32 format.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.DataType</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.foundational.DataType.HALF">
+<code class="descname">HALF</code><a class="headerlink" href="#turret.foundational.DataType.HALF" title="Permalink to this definition">¶</a></dt>
+<dd><p>FP16 format.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.DataType</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.foundational.DataType.INT8">
+<code class="descname">INT8</code><a class="headerlink" href="#turret.foundational.DataType.INT8" title="Permalink to this definition">¶</a></dt>
+<dd><p>INT8 format.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.DataType</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.foundational.DataType.INT32">
+<code class="descname">INT32</code><a class="headerlink" href="#turret.foundational.DataType.INT32" title="Permalink to this definition">¶</a></dt>
+<dd><p>INT32 format.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.DataType</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">FLOAT</code><em class="property"> = &lt;DataType.FLOAT: 0&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">HALF</code><em class="property"> = &lt;DataType.HALF: 1&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">INT32</code><em class="property"> = &lt;DataType.INT32: 3&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">INT8</code><em class="property"> = &lt;DataType.INT8: 2&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="turret.foundational.DataType.nptype">
+<code class="descname">nptype</code><a class="headerlink" href="#turret.foundational.DataType.nptype" title="Permalink to this definition">¶</a></dt>
+<dd><p>NumPy data-type for this type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.foundational.DataType.size">
+<code class="descname">size</code><a class="headerlink" href="#turret.foundational.DataType.size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of bytes consumed by an element of this type.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="turret.foundational.Dimension">
+<em class="property">class </em><code class="descclassname">turret.foundational.</code><code class="descname">Dimension</code><a class="headerlink" href="#turret.foundational.Dimension" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Structure to define a dimension.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>size</strong> (<em>int</em>) – The size of the dimension.</li>
+<li><strong>type</strong> (<em>turret.DimensionType</em>) – The type of the dimension.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="turret.foundational.Dimension.size">
+<code class="descname">size</code><a class="headerlink" href="#turret.foundational.Dimension.size" title="Permalink to this definition">¶</a></dt>
+<dd><p>The size of the dimension.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.foundational.Dimension.type">
+<code class="descname">type</code><a class="headerlink" href="#turret.foundational.Dimension.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>The type of the dimension.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.DimensionType</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">size</code></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">type</code></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="turret.foundational.DimensionType">
+<em class="property">class </em><code class="descclassname">turret.foundational.</code><code class="descname">DimensionType</code><a class="headerlink" href="#turret.foundational.DimensionType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The type of data encoded across this dimension.</p>
+<dl class="attribute">
+<dt id="turret.foundational.DimensionType.CHANNEL">
+<code class="descname">CHANNEL</code><em class="property"> = &lt;DimensionType.CHANNEL: 1&gt;</em><a class="headerlink" href="#turret.foundational.DimensionType.CHANNEL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="turret.foundational.DimensionType.INDEX">
+<code class="descname">INDEX</code><em class="property"> = &lt;DimensionType.INDEX: 2&gt;</em><a class="headerlink" href="#turret.foundational.DimensionType.INDEX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="turret.foundational.DimensionType.SEQUENCE">
+<code class="descname">SEQUENCE</code><em class="property"> = &lt;DimensionType.SEQUENCE: 3&gt;</em><a class="headerlink" href="#turret.foundational.DimensionType.SEQUENCE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="turret.foundational.DimensionType.SPATIAL">
+<code class="descname">SPATIAL</code><em class="property"> = &lt;DimensionType.SPATIAL: 0&gt;</em><a class="headerlink" href="#turret.foundational.DimensionType.SPATIAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="turret.foundational.Dimensions">
+<em class="property">class </em><code class="descclassname">turret.foundational.</code><code class="descname">Dimensions</code><a class="headerlink" href="#turret.foundational.Dimensions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Structure to define the dimensions of a tensor.</p>
+<dl class="staticmethod">
+<dt id="turret.foundational.Dimensions.CHW">
+<em class="property">static </em><code class="descname">CHW</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.foundational.Dimensions.CHW" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make descriptor for 2D spatial data with channels.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="turret.foundational.Dimensions.HW">
+<em class="property">static </em><code class="descname">HW</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.foundational.Dimensions.HW" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make descriptor for 2D spatial data.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="turret.foundational.Dimensions.NCHW">
+<em class="property">static </em><code class="descname">NCHW</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.foundational.Dimensions.NCHW" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make descriptor for 2D spatial data with channels and indices.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.foundational.Dimensions.shape">
+<code class="descname">shape</code><a class="headerlink" href="#turret.foundational.Dimensions.shape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tuple of dimensions.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.foundational.Dimensions.size">
+<code class="descname">size</code><a class="headerlink" href="#turret.foundational.Dimensions.size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of elements.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="turret.foundational.Weights">
+<em class="property">class </em><code class="descclassname">turret.foundational.</code><code class="descname">Weights</code><a class="headerlink" href="#turret.foundational.Weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>An array of weights used as a layer parameter.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>values</strong> (<em>numpy.ndarray</em>) – The weight values.</li>
+<li><strong>dtype</strong> (<em>data-type</em>) – The type of the weights.
+<cite>values.dtype</cite> will be used as it when <cite>dtype</cite> is None.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.graph">
+<span id="turret-graph-module"></span><h2>turret.graph module<a class="headerlink" href="#module-turret.graph" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="turret.graph.NetworkDefinition">
+<em class="property">class </em><code class="descclassname">turret.graph.</code><code class="descname">NetworkDefinition</code><a class="headerlink" href="#turret.graph.NetworkDefinition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A network definition.</p>
+<dl class="method">
+<dt id="turret.graph.NetworkDefinition.add_constant">
+<code class="descname">add_constant</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.graph.NetworkDefinition.add_constant" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add an constant input to the networks.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>weights</strong> (<em>np.ndarray</em>) – The input values.</li>
+<li><strong>dims</strong> (<a class="reference internal" href="#turret.foundational.Dimensions" title="turret.foundational.Dimensions"><em>Dimensions</em></a><em>, </em><em>optional</em>) – The dimensions of this input. Default
+to None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The tensor that is added by this operation.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">turret.Tensor</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="turret.graph.NetworkDefinition.add_input">
+<code class="descname">add_input</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.graph.NetworkDefinition.add_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add an input tensor to the network.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> (<em>str</em>) – The name of the input tensor.</li>
+<li><strong>type</strong> (<em>turret.DataType</em>) – The data type of the input tensor.</li>
+<li><strong>dims</strong> (<em>turret.Dimensions</em>) – The dimensions of the input tensor.</li>
+<li><strong>broadcast_across_batch</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to enable
+broadcast of tensor accross the batch. Default to False.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The tensor that is added by this operation.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">turret.Tensor</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="turret.graph.NetworkDefinition.add_plugin">
+<code class="descname">add_plugin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.graph.NetworkDefinition.add_plugin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add an plugin layer to the networks.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>plugin</strong> (<em>turret.Plugin</em>) – The layer plugin.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="turret.graph.NetworkDefinition.add_resource">
+<code class="descname">add_resource</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.graph.NetworkDefinition.add_resource" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add an resource(ex. weights, bias, etc.) to the networks.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>resource</strong> (<em>turret.Tensor</em>) – an resource.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.graph.NetworkDefinition.dtype">
+<code class="descname">dtype</code><a class="headerlink" href="#turret.graph.NetworkDefinition.dtype" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="turret.graph.NetworkDefinition.input_bindings">
+<code class="descname">input_bindings</code><a class="headerlink" href="#turret.graph.NetworkDefinition.input_bindings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get binding informations of input tensors.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="turret.graph.NetworkDefinition.mark_output">
+<code class="descname">mark_output</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.graph.NetworkDefinition.mark_output" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mark an tensor as an output of the network.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>name</strong> (<em>str</em>) – The name of the output tensor.</li>
+<li><strong>tensor</strong> (<em>turret.Tensor</em>) – The tensor that will be marked as
+an output.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.graph.NetworkDefinition.weight_type">
+<code class="descname">weight_type</code><a class="headerlink" href="#turret.graph.NetworkDefinition.weight_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get data type for weights.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="turret.graph.Tensor">
+<em class="property">class </em><code class="descclassname">turret.graph.</code><code class="descname">Tensor</code><a class="headerlink" href="#turret.graph.Tensor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A tensor in a network definition.</p>
+<dl class="attribute">
+<dt id="turret.graph.Tensor.broadcast_across_batch">
+<code class="descname">broadcast_across_batch</code><a class="headerlink" href="#turret.graph.Tensor.broadcast_across_batch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if this tensor is broadcast across the batch.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.graph.Tensor.dimensions">
+<code class="descname">dimensions</code><a class="headerlink" href="#turret.graph.Tensor.dimensions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the dimensions of the tensor.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.graph.Tensor.is_network_input">
+<code class="descname">is_network_input</code><a class="headerlink" href="#turret.graph.Tensor.is_network_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if this tensor is a network input.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.graph.Tensor.is_network_output">
+<code class="descname">is_network_output</code><a class="headerlink" href="#turret.graph.Tensor.is_network_output" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if this tensor is a network output.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.graph.Tensor.network">
+<code class="descname">network</code><a class="headerlink" href="#turret.graph.Tensor.network" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="turret.graph.Tensor.type">
+<code class="descname">type</code><a class="headerlink" href="#turret.graph.Tensor.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the data type of the tensor.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.logger">
+<span id="turret-logger-module"></span><h2>turret.logger module<a class="headerlink" href="#module-turret.logger" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="turret.logger.Logger">
+<em class="property">class </em><code class="descclassname">turret.logger.</code><code class="descname">Logger</code><a class="headerlink" href="#turret.logger.Logger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Application-implemented logging interface for the builder,
+engine and runtime.</p>
+<dl class="attribute">
+<dt id="turret.logger.Logger.log">
+<code class="descname">log</code><a class="headerlink" href="#turret.logger.Logger.log" title="Permalink to this definition">¶</a></dt>
+<dd><p>A callback implemented by the application to handle logging
+messages.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>severity</strong> (<a class="reference internal" href="#turret.logger.Severity" title="turret.logger.Severity"><em>Severity</em></a>) – The severity of the message.</li>
+<li><strong>message</strong> (<em>str</em>) – The log message.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="turret.logger.LoggerProxy">
+<em class="property">class </em><code class="descclassname">turret.logger.</code><code class="descname">LoggerProxy</code><a class="headerlink" href="#turret.logger.LoggerProxy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="turret.logger.Severity">
+<em class="property">class </em><code class="descclassname">turret.logger.</code><code class="descname">Severity</code><a class="headerlink" href="#turret.logger.Severity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The severity corresponding to a log message.</p>
+<dl class="attribute">
+<dt id="turret.logger.Severity.INTERNAL_ERROR">
+<code class="descname">INTERNAL_ERROR</code><a class="headerlink" href="#turret.logger.Severity.INTERNAL_ERROR" title="Permalink to this definition">¶</a></dt>
+<dd><p>An internal error has occurred.
+Execution is unrecoverable.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.Severity</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.logger.Severity.ERROR">
+<code class="descname">ERROR</code><a class="headerlink" href="#turret.logger.Severity.ERROR" title="Permalink to this definition">¶</a></dt>
+<dd><p>An application error has occurred.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.Severity</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.logger.Severity.WARNING">
+<code class="descname">WARNING</code><a class="headerlink" href="#turret.logger.Severity.WARNING" title="Permalink to this definition">¶</a></dt>
+<dd><p>An application error has been discovered,
+but TensorRT has recovered or fallen back to a default.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.Severity</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.logger.Severity.INFO">
+<code class="descname">INFO</code><a class="headerlink" href="#turret.logger.Severity.INFO" title="Permalink to this definition">¶</a></dt>
+<dd><p>Informational messages.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.Severity</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">ERROR</code><em class="property"> = &lt;Severity.ERROR: 1&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">INFO</code><em class="property"> = &lt;Severity.INFO: 3&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">INTERNAL_ERROR</code><em class="property"> = &lt;Severity.INTERNAL_ERROR: 0&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">WARNING</code><em class="property"> = &lt;Severity.WARNING: 2&gt;</em></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.logger_bridge">
+<span id="turret-logger-bridge-module"></span><h2>turret.logger_bridge module<a class="headerlink" href="#module-turret.logger_bridge" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-turret.type_check">
+<span id="turret-type-check-module"></span><h2>turret.type_check module<a class="headerlink" href="#module-turret.type_check" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="turret.type_check.get_datatype">
+<code class="descclassname">turret.type_check.</code><code class="descname">get_datatype</code><span class="sig-paren">(</span><em>dtype</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.type_check.get_datatype" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert the data type of Numpy to it of Turret.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>dtype</strong> – The data type of Numpy.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The data type of Turret.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">turret.DataType</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-turret" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Fixstars Corp.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

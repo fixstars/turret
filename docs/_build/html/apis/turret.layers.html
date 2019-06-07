@@ -1,0 +1,2864 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>turret.layers package &mdash; Turret 4.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Turret
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">turret.layers package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-turret.layers.average_pooling_2d">turret.layers.average_pooling_2d module</a></li>
+<li><a class="reference internal" href="#module-turret.layers.basic_math">turret.layers.basic_math module</a></li>
+<li><a class="reference internal" href="#module-turret.layers.batch_normalization">turret.layers.batch_normalization module</a></li>
+<li><a class="reference internal" href="#module-turret.layers.bias">turret.layers.bias module</a></li>
+<li><a class="reference internal" href="#module-turret.layers.builtin">turret.layers.builtin module</a></li>
+<li><a class="reference internal" href="#module-turret.layers.leaky_relu">turret.layers.leaky_relu module</a></li>
+<li><a class="reference internal" href="#module-turret.layers.lstm">turret.layers.lstm module</a></li>
+<li><a class="reference internal" href="#module-turret.layers.lstm_v2">turret.layers.lstm_v2 module</a></li>
+<li><a class="reference internal" href="#module-turret.layers.max_average_blend_pooling_2d">turret.layers.max_average_blend_pooling_2d module</a></li>
+<li><a class="reference internal" href="#module-turret.layers.max_pooling_2d">turret.layers.max_pooling_2d module</a></li>
+<li><a class="reference internal" href="#module-turret.layers.pad">turret.layers.pad module</a></li>
+<li><a class="reference internal" href="#module-turret.layers.relu">turret.layers.relu module</a></li>
+<li><a class="reference internal" href="#module-turret.layers.repeat">turret.layers.repeat module</a></li>
+<li><a class="reference internal" href="#module-turret.layers.reshape">turret.layers.reshape module</a></li>
+<li><a class="reference internal" href="#module-turret.layers.rnn">turret.layers.rnn module</a></li>
+<li><a class="reference internal" href="#module-turret.layers.rnn_v2">turret.layers.rnn_v2 module</a></li>
+<li><a class="reference internal" href="#module-turret.layers.shuffle">turret.layers.shuffle module</a></li>
+<li><a class="reference internal" href="#module-turret.layers.sigmoid">turret.layers.sigmoid module</a></li>
+<li><a class="reference internal" href="#module-turret.layers.split">turret.layers.split module</a></li>
+<li><a class="reference internal" href="#module-turret.layers.tanh">turret.layers.tanh module</a></li>
+<li><a class="reference internal" href="#module-turret.layers">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Turret</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>turret.layers package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/apis/turret.layers.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="turret-layers-package">
+<h1>turret.layers package<a class="headerlink" href="#turret-layers-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-turret.layers.average_pooling_2d">
+<span id="turret-layers-average-pooling-2d-module"></span><h2>turret.layers.average_pooling_2d module<a class="headerlink" href="#module-turret.layers.average_pooling_2d" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="turret.layers.average_pooling_2d.average_pooling_2d">
+<code class="descclassname">turret.layers.average_pooling_2d.</code><code class="descname">average_pooling_2d</code><span class="sig-paren">(</span><em>input</em>, <em>window_size</em>, <em>stride=1</em>, <em>padding=0</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.average_pooling_2d.average_pooling_2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for average 2D pooling.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by pooling.</li>
+<li><strong>window_size</strong> (<em>tupple</em>) – Window size for pooling.</li>
+<li><strong>stride</strong> (<em>int</em>) – Stride for pooling.</li>
+<li><strong>padding</strong> – Padding for pooling.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by pooling.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.layers.basic_math">
+<span id="turret-layers-basic-math-module"></span><h2>turret.layers.basic_math module<a class="headerlink" href="#module-turret.layers.basic_math" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="turret.layers.basic_math.abs">
+<code class="descclassname">turret.layers.basic_math.</code><code class="descname">abs</code><span class="sig-paren">(</span><em>input</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.basic_math.abs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the absolute value of element.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>input</strong> (<em>turret.Tensor</em>) – The input tensor.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The absolute value of element.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">tensor(turret.Tensor)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.basic_math.div">
+<code class="descclassname">turret.layers.basic_math.</code><code class="descname">div</code><span class="sig-paren">(</span><em>input0</em>, <em>input1</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.basic_math.div" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the quotient of two elements.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input0</strong> (<em>turret.Tensor</em>) – The first input tensor.</li>
+<li><strong>input1</strong> (<em>turret.Tensor</em>) – The second input tensor.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The quotient of two elements.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.basic_math.exp">
+<code class="descclassname">turret.layers.basic_math.</code><code class="descname">exp</code><span class="sig-paren">(</span><em>input</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.basic_math.exp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the exponent of element.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>input</strong> (<em>turret.Tensor</em>) – The input tensor.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The exponent of element.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">tensor(turret.Tensor)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.basic_math.log">
+<code class="descclassname">turret.layers.basic_math.</code><code class="descname">log</code><span class="sig-paren">(</span><em>input</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.basic_math.log" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the log(base e) of element.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>input</strong> (<em>turret.Tensor</em>) – The input tensor.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The log of element.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">tensor(turret.Tensor)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.basic_math.max">
+<code class="descclassname">turret.layers.basic_math.</code><code class="descname">max</code><span class="sig-paren">(</span><em>*xs</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.basic_math.max" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the maximum of elements.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>xs</strong> (<em>tuple</em>) – Tuple of tensor.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Maximum tensor.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">tensor(turret.Tensor)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.basic_math.min">
+<code class="descclassname">turret.layers.basic_math.</code><code class="descname">min</code><span class="sig-paren">(</span><em>*xs</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.basic_math.min" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the minimum of elements.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>xs</strong> (<em>tuple</em>) – Tuple of tensor.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Minimum tensor.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">tensor(turret.Tensor)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.basic_math.neg">
+<code class="descclassname">turret.layers.basic_math.</code><code class="descname">neg</code><span class="sig-paren">(</span><em>input</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.basic_math.neg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the negation of element.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>input</strong> (<em>turret.Tensor</em>) – The input tensor.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The negation of element.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">tensor(turret.Tensor)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.basic_math.pow">
+<code class="descclassname">turret.layers.basic_math.</code><code class="descname">pow</code><span class="sig-paren">(</span><em>input0</em>, <em>input1</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.basic_math.pow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the power of two elements.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input0</strong> (<em>turret.Tensor</em>) – The first input tensor.</li>
+<li><strong>input1</strong> (<em>turret.Tensor</em>) – The second input tensor.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The power of two elements.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.basic_math.prod">
+<code class="descclassname">turret.layers.basic_math.</code><code class="descname">prod</code><span class="sig-paren">(</span><em>*xs</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.basic_math.prod" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the product of elements.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>xs</strong> (<em>tuple</em>) – Tuple of tensor.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Producted tensor.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">tensor(turret.Tensor)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.basic_math.recip">
+<code class="descclassname">turret.layers.basic_math.</code><code class="descname">recip</code><span class="sig-paren">(</span><em>input</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.basic_math.recip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the reciprocal of element.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>input</strong> (<em>turret.Tensor</em>) – The input tensor.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The reciprocal of element.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">tensor(turret.Tensor)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.basic_math.sqrt">
+<code class="descclassname">turret.layers.basic_math.</code><code class="descname">sqrt</code><span class="sig-paren">(</span><em>input</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.basic_math.sqrt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the square root of element.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>input</strong> (<em>turret.Tensor</em>) – The input tensor.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The square root of element.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">tensor(turret.Tensor)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.basic_math.sub">
+<code class="descclassname">turret.layers.basic_math.</code><code class="descname">sub</code><span class="sig-paren">(</span><em>input0</em>, <em>input1</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.basic_math.sub" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the difference of two elements.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input0</strong> (<em>turret.Tensor</em>) – The first input tensor.</li>
+<li><strong>input1</strong> (<em>turret.Tensor</em>) – The second input tensor.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The difference of two elements.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.basic_math.sum">
+<code class="descclassname">turret.layers.basic_math.</code><code class="descname">sum</code><span class="sig-paren">(</span><em>*xs</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.basic_math.sum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the sum of elements.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>xs</strong> (<em>tuple</em>) – Tuple of tensor.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Summed tensor.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">tensor(turret.Tensor)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.layers.batch_normalization">
+<span id="turret-layers-batch-normalization-module"></span><h2>turret.layers.batch_normalization module<a class="headerlink" href="#module-turret.layers.batch_normalization" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="turret.layers.batch_normalization.batch_normalization">
+<code class="descclassname">turret.layers.batch_normalization.</code><code class="descname">batch_normalization</code><span class="sig-paren">(</span><em>input</em>, <em>mean</em>, <em>variance</em>, <em>gamma=None</em>, <em>beta=None</em>, <em>eps=2e-05</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.batch_normalization.batch_normalization" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for batch normalization.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by batch
+normalization.</li>
+<li><strong>mean</strong> (<em>turret.Tensor</em>) – The initial mean value.</li>
+<li><strong>variance</strong> (<em>turret.Tensor</em>) – The initial variance value.</li>
+<li><strong>gamma</strong> (<em>turret.Tensor</em>) – The initial gamma value.</li>
+<li><strong>beta</strong> (<em>turret.Tensor</em>) – The initial beta value.</li>
+<li><strong>eps</strong> (<em>float</em>) – Small float added to variance to avoid dividing
+by zero.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by batch normalization.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.layers.bias">
+<span id="turret-layers-bias-module"></span><h2>turret.layers.bias module<a class="headerlink" href="#module-turret.layers.bias" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="turret.layers.bias.bias">
+<code class="descclassname">turret.layers.bias.</code><code class="descname">bias</code><span class="sig-paren">(</span><em>input</em>, <em>b</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.bias.bias" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer to bias.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be biased.</li>
+<li><strong>b</strong> (<em>np.ndarray</em>) – Bias.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Biased tensor.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.layers.builtin">
+<span id="turret-layers-builtin-module"></span><h2>turret.layers.builtin module<a class="headerlink" href="#module-turret.layers.builtin" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="turret.layers.builtin.ActivationType">
+<em class="property">class </em><code class="descclassname">turret.layers.builtin.</code><code class="descname">ActivationType</code><a class="headerlink" href="#turret.layers.builtin.ActivationType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>enumerates the types of activation to perform in an activation
+layer.</p>
+<dl class="attribute">
+<dt id="turret.layers.builtin.ActivationType.RELU">
+<code class="descname">RELU</code><a class="headerlink" href="#turret.layers.builtin.ActivationType.RELU" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rectified linear activation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.ActivationType</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.ActivationType.SIGMOID">
+<code class="descname">SIGMOID</code><a class="headerlink" href="#turret.layers.builtin.ActivationType.SIGMOID" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sigmoid activation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.ActivationType</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.ActivationType.TANH">
+<code class="descname">TANH</code><a class="headerlink" href="#turret.layers.builtin.ActivationType.TANH" title="Permalink to this definition">¶</a></dt>
+<dd><p>TanH activation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.ActivationType</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">RELU</code><em class="property"> = &lt;ActivationType.RELU: 0&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">SIGMOID</code><em class="property"> = &lt;ActivationType.SIGMOID: 1&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">TANH</code><em class="property"> = &lt;ActivationType.TANH: 2&gt;</em></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="turret.layers.builtin.ElementWiseOperation">
+<em class="property">class </em><code class="descclassname">turret.layers.builtin.</code><code class="descname">ElementWiseOperation</code><a class="headerlink" href="#turret.layers.builtin.ElementWiseOperation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Enumerates the binary operations that may be performed by an
+elementwise layer.</p>
+<dl class="attribute">
+<dt id="turret.layers.builtin.ElementWiseOperation.SUM">
+<code class="descname">SUM</code><a class="headerlink" href="#turret.layers.builtin.ElementWiseOperation.SUM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sum of the two elements.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.ElementWiseOperation</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.ElementWiseOperation.PROD">
+<code class="descname">PROD</code><a class="headerlink" href="#turret.layers.builtin.ElementWiseOperation.PROD" title="Permalink to this definition">¶</a></dt>
+<dd><p>Product of the two elements.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.ElementWiseOperation</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.ElementWiseOperation.MAX">
+<code class="descname">MAX</code><a class="headerlink" href="#turret.layers.builtin.ElementWiseOperation.MAX" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum of the two elements.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.ElementWiseOperation</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.ElementWiseOperation.MIN">
+<code class="descname">MIN</code><a class="headerlink" href="#turret.layers.builtin.ElementWiseOperation.MIN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Minimum of the two elements.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.ElementWiseOperation</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.ElementWiseOperation.SUB">
+<code class="descname">SUB</code><a class="headerlink" href="#turret.layers.builtin.ElementWiseOperation.SUB" title="Permalink to this definition">¶</a></dt>
+<dd><p>Substract the second element from
+the first.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.ElementWiseOperation</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.ElementWiseOperation.DIV">
+<code class="descname">DIV</code><a class="headerlink" href="#turret.layers.builtin.ElementWiseOperation.DIV" title="Permalink to this definition">¶</a></dt>
+<dd><p>Divide the first element by the
+second.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.ElementWiseOperation</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.ElementWiseOperation.POW">
+<code class="descname">POW</code><a class="headerlink" href="#turret.layers.builtin.ElementWiseOperation.POW" title="Permalink to this definition">¶</a></dt>
+<dd><p>The first element to the power of
+the second element.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.ElementWiseOperation</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">DIV</code><em class="property"> = &lt;ElementWiseOperation.DIV: 5&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">MAX</code><em class="property"> = &lt;ElementWiseOperation.MAX: 2&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">MIN</code><em class="property"> = &lt;ElementWiseOperation.MIN: 3&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">POW</code><em class="property"> = &lt;ElementWiseOperation.POW: 6&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">PROD</code><em class="property"> = &lt;ElementWiseOperation.PROD: 1&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">SUB</code><em class="property"> = &lt;ElementWiseOperation.SUB: 4&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">SUM</code><em class="property"> = &lt;ElementWiseOperation.SUM: 0&gt;</em></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="turret.layers.builtin.PoolingType">
+<em class="property">class </em><code class="descclassname">turret.layers.builtin.</code><code class="descname">PoolingType</code><a class="headerlink" href="#turret.layers.builtin.PoolingType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Type of pooling to perform in a pooling layer.</p>
+<dl class="attribute">
+<dt id="turret.layers.builtin.PoolingType.MAX">
+<code class="descname">MAX</code><a class="headerlink" href="#turret.layers.builtin.PoolingType.MAX" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum over elements.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.PoolingType</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.PoolingType.AVERAGE">
+<code class="descname">AVERAGE</code><a class="headerlink" href="#turret.layers.builtin.PoolingType.AVERAGE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Average over elements. If the tensor is
+padded, the count includes the padding.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.PoolingType</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.PoolingType.MAX_AVERAGE_BLEND">
+<code class="descname">MAX_AVERAGE_BLEND</code><a class="headerlink" href="#turret.layers.builtin.PoolingType.MAX_AVERAGE_BLEND" title="Permalink to this definition">¶</a></dt>
+<dd><p>Blending between the max
+pooling and average pooling:
+(1-blendFactor)*maxPool + blendFactor*avgPool</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.PoolingType</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">AVERAGE</code><em class="property"> = &lt;PoolingType.AVERAGE: 1&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">MAX</code><em class="property"> = &lt;PoolingType.MAX: 0&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">MAX_AVERAGE_BLEND</code><em class="property"> = &lt;PoolingType.MAX_AVERAGE_BLEND: 2&gt;</em></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="turret.layers.builtin.RNNDirection">
+<em class="property">class </em><code class="descclassname">turret.layers.builtin.</code><code class="descname">RNNDirection</code><a class="headerlink" href="#turret.layers.builtin.RNNDirection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Enumerates the RNN directions.</p>
+<dl class="attribute">
+<dt id="turret.layers.builtin.RNNDirection.UNIDIRECTION">
+<code class="descname">UNIDIRECTION</code><a class="headerlink" href="#turret.layers.builtin.RNNDirection.UNIDIRECTION" title="Permalink to this definition">¶</a></dt>
+<dd><p>Network iterations from first input
+to last input.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.RNNDirection</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.RNNDirection.BIDIRECTION">
+<code class="descname">BIDIRECTION</code><a class="headerlink" href="#turret.layers.builtin.RNNDirection.BIDIRECTION" title="Permalink to this definition">¶</a></dt>
+<dd><p>Network iterates from first to last
+and vice versa and outputs concatenated.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.RNNDirection</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">BIDIRECTION</code><em class="property"> = &lt;RNNDirection.BIDIRECTION: 1&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">UNIDIRECTION</code><em class="property"> = &lt;RNNDirection.UNIDIRECTION: 0&gt;</em></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="turret.layers.builtin.RNNGateType">
+<em class="property">class </em><code class="descclassname">turret.layers.builtin.</code><code class="descname">RNNGateType</code><a class="headerlink" href="#turret.layers.builtin.RNNGateType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Identifies an individual gate within an RNN cell.</p>
+<dl class="attribute">
+<dt id="turret.layers.builtin.RNNGateType.INPUT">
+<code class="descname">INPUT</code><a class="headerlink" href="#turret.layers.builtin.RNNGateType.INPUT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Input gate (i).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.RNNGateType</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.RNNGateType.OUTPUT">
+<code class="descname">OUTPUT</code><a class="headerlink" href="#turret.layers.builtin.RNNGateType.OUTPUT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Output gate (o).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.RNNGateType</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.RNNGateType.FORGET">
+<code class="descname">FORGET</code><a class="headerlink" href="#turret.layers.builtin.RNNGateType.FORGET" title="Permalink to this definition">¶</a></dt>
+<dd><p>Forget gate (f).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.RNNGateType</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.RNNGateType.UPDATE">
+<code class="descname">UPDATE</code><a class="headerlink" href="#turret.layers.builtin.RNNGateType.UPDATE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update gate (u).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.RNNGateType</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.RNNGateType.RESET">
+<code class="descname">RESET</code><a class="headerlink" href="#turret.layers.builtin.RNNGateType.RESET" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset gate (r).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.RNNGateType</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.RNNGateType.CELL">
+<code class="descname">CELL</code><a class="headerlink" href="#turret.layers.builtin.RNNGateType.CELL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cell gate (c).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.RNNGateType</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">INPUT</code></dt>
+<dd><p>Hidden gate (h).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.RNNGateType</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">CELL</code><em class="property"> = &lt;RNNGateType.CELL: 5&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">FORGET</code><em class="property"> = &lt;RNNGateType.FORGET: 2&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.RNNGateType.HIDDEN">
+<code class="descname">HIDDEN</code><em class="property"> = &lt;RNNGateType.HIDDEN: 6&gt;</em><a class="headerlink" href="#turret.layers.builtin.RNNGateType.HIDDEN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">INPUT</code><em class="property"> = &lt;RNNGateType.INPUT: 0&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">OUTPUT</code><em class="property"> = &lt;RNNGateType.OUTPUT: 1&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">RESET</code><em class="property"> = &lt;RNNGateType.RESET: 4&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">UPDATE</code><em class="property"> = &lt;RNNGateType.UPDATE: 3&gt;</em></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="turret.layers.builtin.RNNInputMode">
+<em class="property">class </em><code class="descclassname">turret.layers.builtin.</code><code class="descname">RNNInputMode</code><a class="headerlink" href="#turret.layers.builtin.RNNInputMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Enumerates the RNN input modes.</p>
+<dl class="attribute">
+<dt id="turret.layers.builtin.RNNInputMode.LINEAR">
+<code class="descname">LINEAR</code><a class="headerlink" href="#turret.layers.builtin.RNNInputMode.LINEAR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform the normal matrix multiplication
+in the first recurrent layer.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.RNNInputMode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.RNNInputMode.SKIP">
+<code class="descname">SKIP</code><a class="headerlink" href="#turret.layers.builtin.RNNInputMode.SKIP" title="Permalink to this definition">¶</a></dt>
+<dd><p>No operation is performed on the first
+recurrent layer.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.RNNInputMode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">LINEAR</code><em class="property"> = &lt;RNNInputMode.LINEAR: 0&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">SKIP</code><em class="property"> = &lt;RNNInputMode.SKIP: 1&gt;</em></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="turret.layers.builtin.RNNOperation">
+<em class="property">class </em><code class="descclassname">turret.layers.builtin.</code><code class="descname">RNNOperation</code><a class="headerlink" href="#turret.layers.builtin.RNNOperation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Enumerates the RNN operations.</p>
+<dl class="attribute">
+<dt id="turret.layers.builtin.RNNOperation.RELU">
+<code class="descname">RELU</code><a class="headerlink" href="#turret.layers.builtin.RNNOperation.RELU" title="Permalink to this definition">¶</a></dt>
+<dd><p>Single gate RNN with ReLU activation
+function.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.RNNOperation</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.RNNOperation.TANH">
+<code class="descname">TANH</code><a class="headerlink" href="#turret.layers.builtin.RNNOperation.TANH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Single gate RNN with TANH activation
+function.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.RNNOperation</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.RNNOperation.LSTM">
+<code class="descname">LSTM</code><a class="headerlink" href="#turret.layers.builtin.RNNOperation.LSTM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Four-gate LSTM network without peephole
+connections.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.RNNOperation</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.RNNOperation.GRU">
+<code class="descname">GRU</code><a class="headerlink" href="#turret.layers.builtin.RNNOperation.GRU" title="Permalink to this definition">¶</a></dt>
+<dd><p>Three-gate network consisting of Gated
+Recurrent Units.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.RNNOperation</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">GRU</code><em class="property"> = &lt;RNNOperation.GRU: 3&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">LSTM</code><em class="property"> = &lt;RNNOperation.LSTM: 2&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">RELU</code><em class="property"> = &lt;RNNOperation.RELU: 0&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">TANH</code><em class="property"> = &lt;RNNOperation.TANH: 1&gt;</em></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="turret.layers.builtin.ReduceOperation">
+<em class="property">class </em><code class="descclassname">turret.layers.builtin.</code><code class="descname">ReduceOperation</code><a class="headerlink" href="#turret.layers.builtin.ReduceOperation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Enumerates the reduce operations that may be performed by an
+reduce layer.</p>
+<dl class="attribute">
+<dt id="turret.layers.builtin.ReduceOperation.SUM">
+<code class="descname">SUM</code><a class="headerlink" href="#turret.layers.builtin.ReduceOperation.SUM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sum of the elements.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.ReduceOperation</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.ReduceOperation.PROD">
+<code class="descname">PROD</code><a class="headerlink" href="#turret.layers.builtin.ReduceOperation.PROD" title="Permalink to this definition">¶</a></dt>
+<dd><p>Product of the elements.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.ReduceOperation</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.ReduceOperation.MAX">
+<code class="descname">MAX</code><a class="headerlink" href="#turret.layers.builtin.ReduceOperation.MAX" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum of the elements.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.ReduceOperation</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.ReduceOperation.MIN">
+<code class="descname">MIN</code><a class="headerlink" href="#turret.layers.builtin.ReduceOperation.MIN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Minimum of the elements.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.ReduceOperation</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.ReduceOperation.AVG">
+<code class="descname">AVG</code><a class="headerlink" href="#turret.layers.builtin.ReduceOperation.AVG" title="Permalink to this definition">¶</a></dt>
+<dd><p>Average of the elements.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.ReduceOperation</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">AVG</code><em class="property"> = &lt;ReduceOperation.AVG: 4&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">MAX</code><em class="property"> = &lt;ReduceOperation.MAX: 2&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">MIN</code><em class="property"> = &lt;ReduceOperation.MIN: 3&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">PROD</code><em class="property"> = &lt;ReduceOperation.PROD: 1&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">SUM</code><em class="property"> = &lt;ReduceOperation.SUM: 0&gt;</em></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="turret.layers.builtin.ScaleMode">
+<em class="property">class </em><code class="descclassname">turret.layers.builtin.</code><code class="descname">ScaleMode</code><a class="headerlink" href="#turret.layers.builtin.ScaleMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Controls how scale is applied in a Scale layer.</p>
+<dl class="attribute">
+<dt id="turret.layers.builtin.ScaleMode.UNIFORM">
+<code class="descname">UNIFORM</code><a class="headerlink" href="#turret.layers.builtin.ScaleMode.UNIFORM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Identical coefficients across all elements
+of the tensor.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.ScaleMode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.ScaleMode.CHANNEL">
+<code class="descname">CHANNEL</code><a class="headerlink" href="#turret.layers.builtin.ScaleMode.CHANNEL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Per-channel coefficients.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.ScaleMode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.ScaleMode.ELEMENTWISE">
+<code class="descname">ELEMENTWISE</code><a class="headerlink" href="#turret.layers.builtin.ScaleMode.ELEMENTWISE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Elementwise coefficients.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.ScaleMode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">CHANNEL</code><em class="property"> = &lt;ScaleMode.CHANNEL: 1&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">ELEMENTWISE</code><em class="property"> = &lt;ScaleMode.ELEMENTWISE: 2&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">UNIFORM</code><em class="property"> = &lt;ScaleMode.UNIFORM: 0&gt;</em></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="turret.layers.builtin.TopKOperation">
+<em class="property">class </em><code class="descclassname">turret.layers.builtin.</code><code class="descname">TopKOperation</code><a class="headerlink" href="#turret.layers.builtin.TopKOperation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Enumerates the operations that may be performed by a TopK layer.</p>
+<dl class="attribute">
+<dt id="turret.layers.builtin.TopKOperation.MAX">
+<code class="descname">MAX</code><a class="headerlink" href="#turret.layers.builtin.TopKOperation.MAX" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum of the elements.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.TopKOperation</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.TopKOperation.MIN">
+<code class="descname">MIN</code><a class="headerlink" href="#turret.layers.builtin.TopKOperation.MIN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Minimum of the elements.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.TopKOperation</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">MAX</code><em class="property"> = &lt;TopKOperation.MAX: 0&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">MIN</code><em class="property"> = &lt;TopKOperation.MIN: 1&gt;</em></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="turret.layers.builtin.UnaryOperation">
+<em class="property">class </em><code class="descclassname">turret.layers.builtin.</code><code class="descname">UnaryOperation</code><a class="headerlink" href="#turret.layers.builtin.UnaryOperation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Enumerates the unary operations that may be performed by an
+unary layer.</p>
+<dl class="attribute">
+<dt id="turret.layers.builtin.UnaryOperation.EXP">
+<code class="descname">EXP</code><a class="headerlink" href="#turret.layers.builtin.UnaryOperation.EXP" title="Permalink to this definition">¶</a></dt>
+<dd><p>Exponentation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.UnaryOperation</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.UnaryOperation.LOG">
+<code class="descname">LOG</code><a class="headerlink" href="#turret.layers.builtin.UnaryOperation.LOG" title="Permalink to this definition">¶</a></dt>
+<dd><p>log (base e).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.UnaryOperation</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.UnaryOperation.SQRT">
+<code class="descname">SQRT</code><a class="headerlink" href="#turret.layers.builtin.UnaryOperation.SQRT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Square root.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.UnaryOperation</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.UnaryOperation.RECIP">
+<code class="descname">RECIP</code><a class="headerlink" href="#turret.layers.builtin.UnaryOperation.RECIP" title="Permalink to this definition">¶</a></dt>
+<dd><p>reciprocal.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.UnaryOperation</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.UnaryOperation.ABS">
+<code class="descname">ABS</code><a class="headerlink" href="#turret.layers.builtin.UnaryOperation.ABS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Absolute value.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.UnaryOperation</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="turret.layers.builtin.UnaryOperation.NEG">
+<code class="descname">NEG</code><a class="headerlink" href="#turret.layers.builtin.UnaryOperation.NEG" title="Permalink to this definition">¶</a></dt>
+<dd><p>Negation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">turret.UnaryOperation</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">ABS</code><em class="property"> = &lt;UnaryOperation.ABS: 4&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">EXP</code><em class="property"> = &lt;UnaryOperation.EXP: 0&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">LOG</code><em class="property"> = &lt;UnaryOperation.LOG: 1&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">NEG</code><em class="property"> = &lt;UnaryOperation.NEG: 5&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">RECIP</code><em class="property"> = &lt;UnaryOperation.RECIP: 3&gt;</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">SQRT</code><em class="property"> = &lt;UnaryOperation.SQRT: 2&gt;</em></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.builtin.builtin_activation">
+<code class="descclassname">turret.layers.builtin.</code><code class="descname">builtin_activation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.builtin.builtin_activation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for activation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by activation.</li>
+<li><strong>type</strong> (<em>turret.ActivationType</em>) – Type of Activation.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by activation.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.builtin.builtin_pooling">
+<code class="descclassname">turret.layers.builtin.</code><code class="descname">builtin_pooling</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.builtin.builtin_pooling" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for pooling.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by pooling.</li>
+<li><strong>type</strong> (<em>turret.PoolingType</em>) – Type of pooling.</li>
+<li><strong>window_size</strong> (<em>tupple</em>) – Window size for pooling.</li>
+<li><strong>stride</strong> (<em>int</em>) – Stride for pooling.</li>
+<li><strong>padding</strong> – Padding for pooling.</li>
+<li><strong>blend</strong> (<em>float</em><em>, </em><em>optional</em>) – Blending factor for the max_average_blend mode:
+max_average_blendPool = (1-blendFactor)*maxPool + blendFactor*avgPool
+blendFactor is a user value in [0,1] with the default value of 0.0
+This value only applies for the MAX_AVERAGE_BLEND mode. Default
+to None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by pooling.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.builtin.concat">
+<code class="descclassname">turret.layers.builtin.</code><code class="descname">concat</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.builtin.concat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for concatenation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>tensors</strong> (<em>object</em>) – Tensors which will be processed by concat layer.</li>
+<li><strong>axes</strong> (<em>int</em><em>, </em><em>optional</em>) – Axes to apply layer. Default to 0.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by concat layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.builtin.convolution_2d">
+<code class="descclassname">turret.layers.builtin.</code><code class="descname">convolution_2d</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.builtin.convolution_2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for 2D Convolution.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by layer.</li>
+<li><strong>filters</strong> (<em>np.ndarray</em>) – Filters for convolution.</li>
+<li><strong>biases</strong> (<em>np.ndarray</em><em>, </em><em>optional</em>) – Biases for convolution. Defaults to None.</li>
+<li><strong>stride</strong> (<em>int</em><em>, </em><em>optional</em>) – Stride for convolution. Defaults to 1.</li>
+<li><strong>padding</strong> (<em>int</em><em>, </em><em>optional</em>) – Padding for convolution. Defaults to 0.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.builtin.deconvolution_2d">
+<code class="descclassname">turret.layers.builtin.</code><code class="descname">deconvolution_2d</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.builtin.deconvolution_2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for 2D Deconvolution.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by layer.</li>
+<li><strong>filters</strong> (<em>np.ndarray</em>) – Filters for deconvolution.</li>
+<li><strong>biases</strong> (<em>np.ndarray</em><em>, </em><em>optional</em>) – Biases for deconvolution. Default to
+None.</li>
+<li><strong>stride</strong> (<em>int</em><em>, </em><em>optional</em>) – Stride for deconvolution. Default to 1.</li>
+<li><strong>padding</strong> (<em>int</em><em>, </em><em>optional</em>) – Padding for deconvolution. Default to 0.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.builtin.elementwise">
+<code class="descclassname">turret.layers.builtin.</code><code class="descname">elementwise</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.builtin.elementwise" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for elementwise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input0</strong> (<em>turret.Tensor</em>) – First tensor which will be processed by layer.</li>
+<li><strong>input1</strong> (<em>turret.Tensor</em>) – Second tensor which will be processed by layer.</li>
+<li><strong>op</strong> (<em>turret.ElementWiseOperation</em>) – Elementwise operator.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.builtin.fully_connected">
+<code class="descclassname">turret.layers.builtin.</code><code class="descname">fully_connected</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.builtin.fully_connected" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for fully connected.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by layer.</li>
+<li><strong>weights</strong> (<em>np.ndarray</em>) – Filters for fully connected layer.</li>
+<li><strong>biases</strong> (<em>np.ndarray</em><em>, </em><em>optional</em>) – Biases for fully connected layer.
+Defaults to None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.builtin.gather">
+<code class="descclassname">turret.layers.builtin.</code><code class="descname">gather</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.builtin.gather" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for gathering.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> (<em>turret.Tensor</em>) – The tensor to gather values from.</li>
+<li><strong>indices</strong> (<em>turret.Tensor</em>) – The tensor to get indices from to populate
+the output tensor.</li>
+<li><strong>axis</strong> (<em>int</em>) – The non-batch dimension axis in the data tensor to gather
+on.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.builtin.local_response_normalization">
+<code class="descclassname">turret.layers.builtin.</code><code class="descname">local_response_normalization</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.builtin.local_response_normalization" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for local responce normalization(LRN).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by LRN layer.</li>
+<li><strong>n</strong> (<em>int</em><em>, </em><em>optional</em>) – Window size. Default to 5.</li>
+<li><strong>k</strong> (<em>float</em><em>, </em><em>optional</em>) – LRN K value. Default to 2.0.</li>
+<li><strong>alpha</strong> (<em>float</em><em>, </em><em>optional</em>) – LRN alpha value. Default to 1e-4.</li>
+<li><strong>beta</strong> (<em>float</em><em>, </em><em>optional</em>) – LRN beta value. Default to 0.75.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by LRN layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.builtin.matrix_multiply">
+<code class="descclassname">turret.layers.builtin.</code><code class="descname">matrix_multiply</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.builtin.matrix_multiply" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for matrix multiply.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input0</strong> (<em>turret.Tensor</em>) – The tensor which will be first processed by
+layer.</li>
+<li><strong>transpose0</strong> (<em>bool</em>) – True if you transpose input0.</li>
+<li><strong>input1</strong> (<em>turret.Tensor</em>) – The tensor which will be second processed by
+layer.</li>
+<li><strong>transpose1</strong> (<em>bool</em>) – True if you transpose input1.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.builtin.padding">
+<code class="descclassname">turret.layers.builtin.</code><code class="descname">padding</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.builtin.padding" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for padding.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – The tensor which will be processed by layer.</li>
+<li><strong>pre</strong> (<em>float</em>) – The padding that is applied at the start of the tensor.</li>
+<li><strong>post</strong> (<em>float</em>) – The padding that is applied at the end of the tensor.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.builtin.plugin">
+<code class="descclassname">turret.layers.builtin.</code><code class="descname">plugin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.builtin.plugin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plugin layer.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>tensors</strong> (<em>turret.Tensor</em>) – Tensors which will be processed by plugin.</li>
+<li><strong>instance</strong> (<em>turret.PluginBase</em>) – Plugin layer.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by plugin.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.builtin.ragged_softmax">
+<code class="descclassname">turret.layers.builtin.</code><code class="descname">ragged_softmax</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.builtin.ragged_softmax" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for ragged softmax.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – The ZxS input tensor.</li>
+<li><strong>bounds</strong> (<em>turret.Tensor</em>) – The Zx1 bounds tensor.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.builtin.reduce">
+<code class="descclassname">turret.layers.builtin.</code><code class="descname">reduce</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.builtin.reduce" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for unary operation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – The tensor to be done reduce operation.</li>
+<li><strong>op</strong> (<em>turret.ReduceOperation</em>) – Reduce operation.</li>
+<li><strong>axes</strong> (<em>int</em>) – Axes to apply layer.</li>
+<li><strong>keepdims</strong> (<em>bool</em><em>, </em><em>optional</em>) – True if keep dimensions of tensor. Default
+to False.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Operated tensor.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.builtin.rnn">
+<code class="descclassname">turret.layers.builtin.</code><code class="descname">rnn</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.builtin.rnn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for RNN.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This function is not recommended. Use rnn_v2.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by layer.</li>
+<li><strong>num_layers</strong> (<em>int</em>) – The number of layers in the RNN.</li>
+<li><strong>hidden_size</strong> (<em>int</em>) – The size of the internal hidden state for each layer.</li>
+<li><strong>max_sequence_length</strong> (<em>int</em>) – The maximum length of the time sequence.</li>
+<li><strong>op</strong> (<em>turret.RNNOperation</em>) – RNN operator.</li>
+<li><strong>mode</strong> (<em>turret.RNNInputMode</em>) – RNN input mode.</li>
+<li><strong>direction</strong> (<em>turret.RNNDirection</em>) – Direction of RNN.</li>
+<li><strong>weights</strong> (<em>turret.Weights</em>) – Weights.</li>
+<li><strong>bias</strong> (<em>turret.Weights</em>) – Bias.</li>
+<li><strong>hidden_state</strong> (<em>turret.Tensor</em>) – Initial hidden status of RNN.</li>
+<li><strong>cell_state</strong> (<em>turret.Tensor</em><em>, </em><em>optional</em>) – Initial cell state of RNN.
+Default to None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.builtin.rnn_v2">
+<code class="descclassname">turret.layers.builtin.</code><code class="descname">rnn_v2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.builtin.rnn_v2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for RNN.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by layer.</li>
+<li><strong>num_layers</strong> (<em>int</em>) – The number of layers in the RNN.</li>
+<li><strong>hidden_size</strong> (<em>int</em>) – The size of the internal hidden state for each layer.</li>
+<li><strong>max_sequence_length</strong> (<em>int</em>) – The maximum length of the time sequence.</li>
+<li><strong>op</strong> (<em>turret.RNNOperation</em>) – RNN operator.</li>
+<li><strong>mode</strong> (<em>turret.RNNInputMode</em>) – RNN input mode.</li>
+<li><strong>direction</strong> (<em>turret.RNNDirection</em>) – Direction of RNN.</li>
+<li><strong>weights</strong> (<em>turret.Weights</em>) – Weights.</li>
+<li><strong>bias</strong> (<em>turret.Weights</em>) – Bias.</li>
+<li><strong>hidden_state</strong> (<em>turret.Tensor</em>) – Initial hidden status of RNN.</li>
+<li><strong>cell_state</strong> (<em>turret.Tensor</em><em>, </em><em>optional</em>) – Initial cell state of RNN.
+Default to None.</li>
+<li><strong>sequence_lengths</strong> (<em>turret.Tensor</em><em>, </em><em>optional</em>) – The sequence lengths
+specified for the RNN.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.builtin.scale">
+<code class="descclassname">turret.layers.builtin.</code><code class="descname">scale</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.builtin.scale" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for scale.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by scale layer.</li>
+<li><strong>mode</strong> (<em>turret.ScaleMode</em>) – The scaling mode.</li>
+<li><strong>shift</strong> (<em>np.ndarray</em><em>, </em><em>optional</em>) – The shift value. Default to None.</li>
+<li><strong>scale</strong> (<em>np.ndarray</em><em>, </em><em>optional</em>) – The scale value. Default to None.</li>
+<li><strong>power</strong> (<em>np.ndarray</em><em>, </em><em>optional</em>) – The power value. Default to None.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by scale layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.builtin.shuffle_and_reshape">
+<code class="descclassname">turret.layers.builtin.</code><code class="descname">shuffle_and_reshape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.builtin.shuffle_and_reshape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer to shuffle and reshape.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – The tensor which will be processed by layer.</li>
+<li><strong>order1</strong> (<em>tuple</em>) – The permutation applied by the first transpose
+operation.</li>
+<li><strong>shape</strong> (<em>turret.Dimensions</em>) – Reshaped dimensions.</li>
+<li><strong>order2</strong> (<em>tuple</em>) – The permutation applied by the second transpose
+operation.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.builtin.softmax">
+<code class="descclassname">turret.layers.builtin.</code><code class="descname">softmax</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.builtin.softmax" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for softmax.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by softmax layer.</li>
+<li><strong>axes</strong> (<em>int</em><em>, </em><em>optional</em>) – Axes to apply layer. Default to 0.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by softmax layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.builtin.top_k">
+<code class="descclassname">turret.layers.builtin.</code><code class="descname">top_k</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.builtin.top_k" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for TopK reduction.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – The tensor which will be processed by layer.</li>
+<li><strong>op</strong> (<em>turret.TopKOperation</em>) – The TopK operation.</li>
+<li><strong>k</strong> (<em>int</em>) – The k value.</li>
+<li><strong>reduce_axes</strong> (<em>int</em>) – Axes to reduce for the layer.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The two tensors. The first is the value, and the second is the indices.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.builtin.unary">
+<code class="descclassname">turret.layers.builtin.</code><code class="descname">unary</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.builtin.unary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for unary operation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – The tensor to be done unary operation.</li>
+<li><strong>op</strong> (<em>turret.UnaryOperation</em>) – Unary operation.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Operated tensor.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.layers.leaky_relu">
+<span id="turret-layers-leaky-relu-module"></span><h2>turret.layers.leaky_relu module<a class="headerlink" href="#module-turret.layers.leaky_relu" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="turret.layers.leaky_relu.leaky_relu">
+<code class="descclassname">turret.layers.leaky_relu.</code><code class="descname">leaky_relu</code><span class="sig-paren">(</span><em>input</em>, <em>slope=0.2</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.leaky_relu.leaky_relu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for leaky ReLU.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by leaky ReLU.</li>
+<li><strong>slope</strong> (<em>np.ndarray</em>) – Slope value.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by leaky ReLU.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.layers.lstm">
+<span id="turret-layers-lstm-module"></span><h2>turret.layers.lstm module<a class="headerlink" href="#module-turret.layers.lstm" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="turret.layers.lstm.LSTMParameterSet">
+<em class="property">class </em><code class="descclassname">turret.layers.lstm.</code><code class="descname">LSTMParameterSet</code><span class="sig-paren">(</span><em>W_input=None</em>, <em>U_input=None</em>, <em>W_cell=None</em>, <em>U_cell=None</em>, <em>W_forget=None</em>, <em>U_forget=None</em>, <em>W_output=None</em>, <em>U_output=None</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.lstm.LSTMParameterSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The object for parameters(weights, bias) of LSTM layer.</p>
+<dl class="docutils">
+<dt>Attribute:</dt>
+<dd>W_input(np.ndarray): The initial input parameter for data.
+U_input(np.ndarray): The initial input parameter for hidden.
+W_cell(np.ndarray): The initial cell parameter for data.
+U_cell(np.ndarray): The initial cell parameter for hidden.
+W_forget(np.ndarray): The initial forget parameter for data.
+U_forget(np.ndarray): The initial forget parameter for hidden.
+W_output(np.ndarray): The initial output parameter for data.
+U_output(np.ndarray): The initial output parameter for hidden.</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.lstm.blstm">
+<code class="descclassname">turret.layers.lstm.</code><code class="descname">blstm</code><span class="sig-paren">(</span><em>input</em>, <em>max_seq_len</em>, <em>fwd_weights</em>, <em>bwd_weights</em>, <em>fwd_bias</em>, <em>bwd_bias</em>, <em>mode=&lt;RNNInputMode.LINEAR: 0&gt;</em>, <em>hidden_state=None</em>, <em>cell_state=None</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.lstm.blstm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for BiLSTM.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This function is not recommended. Use blstm_v2.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by layer.</li>
+<li><strong>max_seq_len</strong> (<em>int</em>) – The maximum length of the time sequence.</li>
+<li><strong>fwd_weights</strong> (<em>turret.Weights</em>) – Forward weights.</li>
+<li><strong>bwd_weights</strong> (<em>turret.Weights</em>) – Backward weights.</li>
+<li><strong>fwd_bias</strong> (<em>turret.Weights</em>) – Forward Bias.</li>
+<li><strong>bwd_bias</strong> (<em>turret.Weights</em>) – Backward Bias.</li>
+<li><strong>mode</strong> (<em>turret.RNNInputMode</em>) – RNN input mode.</li>
+<li><strong>hidden_state</strong> (<em>turret.Tensor</em>) – Initial hidden status of BiLSTM.</li>
+<li><strong>cell_state</strong> (<em>turret.Tensor</em>) – Initial cell state of BiLSTM.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.lstm.lstm">
+<code class="descclassname">turret.layers.lstm.</code><code class="descname">lstm</code><span class="sig-paren">(</span><em>input</em>, <em>max_seq_len</em>, <em>weights</em>, <em>bias</em>, <em>mode=&lt;RNNInputMode.LINEAR: 0&gt;</em>, <em>hidden_state=None</em>, <em>cell_state=None</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.lstm.lstm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for LSTM.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This function is not recommended. Use lstm_v2.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by layer.</li>
+<li><strong>max_seq_len</strong> (<em>int</em>) – The maximum length of the time sequence.</li>
+<li><strong>weights</strong> (<em>turret.Weights</em>) – Weights.</li>
+<li><strong>bias</strong> (<em>turret.Weights</em>) – Bias.</li>
+<li><strong>mode</strong> (<em>turret.RNNInputMode</em>) – RNN input mode.</li>
+<li><strong>hidden_state</strong> (<em>turret.Tensor</em>) – Initial hidden status of LSTM.</li>
+<li><strong>cell_state</strong> (<em>turret.Tensor</em>) – Initial cell state of LSTM.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.layers.lstm_v2">
+<span id="turret-layers-lstm-v2-module"></span><h2>turret.layers.lstm_v2 module<a class="headerlink" href="#module-turret.layers.lstm_v2" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="turret.layers.lstm_v2.blstm_v2">
+<code class="descclassname">turret.layers.lstm_v2.</code><code class="descname">blstm_v2</code><span class="sig-paren">(</span><em>input</em>, <em>max_seq_len</em>, <em>fwd_weights</em>, <em>bwd_weights</em>, <em>fwd_bias</em>, <em>bwd_bias</em>, <em>mode=&lt;RNNInputMode.LINEAR: 0&gt;</em>, <em>hidden_state=None</em>, <em>cell_state=None</em>, <em>sequence_lengths=None</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.lstm_v2.blstm_v2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for BiLSTM.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by layer.</li>
+<li><strong>max_seq_len</strong> (<em>int</em>) – The maximum length of the time sequence.</li>
+<li><strong>fwd_weights</strong> (<em>turret.Weights</em>) – Forward weights.</li>
+<li><strong>bwd_weights</strong> (<em>turret.Weights</em>) – Backward weights.</li>
+<li><strong>fwd_bias</strong> (<em>turret.Weights</em>) – Forward Bias.</li>
+<li><strong>bwd_bias</strong> (<em>turret.Weights</em>) – Backward Bias.</li>
+<li><strong>mode</strong> (<em>turret.RNNInputMode</em>) – RNN input mode.</li>
+<li><strong>hidden_state</strong> (<em>turret.Tensor</em>) – Initial hidden status of BiLSTM.</li>
+<li><strong>cell_state</strong> (<em>turret.Tensor</em>) – Initial cell state of BiLSTM.</li>
+<li><strong>sequence_lengths</strong> (<em>turret.Tensor</em>) – The sequence lengths specified for
+the BiLSTM.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.lstm_v2.lstm_v2">
+<code class="descclassname">turret.layers.lstm_v2.</code><code class="descname">lstm_v2</code><span class="sig-paren">(</span><em>input</em>, <em>max_seq_len</em>, <em>weights</em>, <em>bias</em>, <em>mode=&lt;RNNInputMode.LINEAR: 0&gt;</em>, <em>hidden_state=None</em>, <em>cell_state=None</em>, <em>sequence_lengths=None</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.lstm_v2.lstm_v2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for LSTM.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by layer.</li>
+<li><strong>max_seq_len</strong> (<em>int</em>) – The maximum length of the time sequence.</li>
+<li><strong>weights</strong> (<em>turret.Weights</em>) – Weights.</li>
+<li><strong>bias</strong> (<em>turret.Weights</em>) – Bias.</li>
+<li><strong>mode</strong> (<em>turret.RNNInputMode</em>) – RNN input mode.</li>
+<li><strong>hidden_state</strong> (<em>turret.Tensor</em>) – Initial hidden status of LSTM.</li>
+<li><strong>cell_state</strong> (<em>turret.Tensor</em>) – Initial cell state of LSTM.</li>
+<li><strong>sequence_lengths</strong> (<em>turret.Tensor</em>) – The sequence lengths specified for
+the LSTM.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.layers.max_average_blend_pooling_2d">
+<span id="turret-layers-max-average-blend-pooling-2d-module"></span><h2>turret.layers.max_average_blend_pooling_2d module<a class="headerlink" href="#module-turret.layers.max_average_blend_pooling_2d" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="turret.layers.max_average_blend_pooling_2d.max_average_blend_pooling_2d">
+<code class="descclassname">turret.layers.max_average_blend_pooling_2d.</code><code class="descname">max_average_blend_pooling_2d</code><span class="sig-paren">(</span><em>input</em>, <em>window_size</em>, <em>stride=1</em>, <em>padding=0</em>, <em>blend=0.0</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.max_average_blend_pooling_2d.max_average_blend_pooling_2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for 2D pooling(max average blend mode).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by pooling.</li>
+<li><strong>window_size</strong> (<em>tupple</em>) – Window size for pooling.</li>
+<li><strong>stride</strong> (<em>int</em>) – Stride for pooling.</li>
+<li><strong>padding</strong> – Padding for pooling.</li>
+<li><strong>blend</strong> (<em>float</em>) – Blending factor for the max_average_blend mode:
+max_average_blendPool = (1-blendFactor)*maxPool + blendFactor*avgPool
+blendFactor is a user value in [0,1] with the default value of 0.0</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by pooling.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.layers.max_pooling_2d">
+<span id="turret-layers-max-pooling-2d-module"></span><h2>turret.layers.max_pooling_2d module<a class="headerlink" href="#module-turret.layers.max_pooling_2d" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="turret.layers.max_pooling_2d.max_pooling_2d">
+<code class="descclassname">turret.layers.max_pooling_2d.</code><code class="descname">max_pooling_2d</code><span class="sig-paren">(</span><em>input</em>, <em>window_size</em>, <em>stride=1</em>, <em>padding=0</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.max_pooling_2d.max_pooling_2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for 2D pooling(max mode).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by pooling.</li>
+<li><strong>window_size</strong> (<em>tupple</em>) – Window size for pooling.</li>
+<li><strong>stride</strong> (<em>int</em>) – Stride for pooling.</li>
+<li><strong>padding</strong> – Padding for pooling.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by pooling.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.layers.pad">
+<span id="turret-layers-pad-module"></span><h2>turret.layers.pad module<a class="headerlink" href="#module-turret.layers.pad" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="turret.layers.pad.pad">
+<code class="descclassname">turret.layers.pad.</code><code class="descname">pad</code><span class="sig-paren">(</span><em>input</em>, <em>pad_width</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.pad.pad" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for padding.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – The tensor which will be processed by layer.</li>
+<li><strong>pad_width</strong> (<em>float</em>) – The padding that is applied at the tensor.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.layers.relu">
+<span id="turret-layers-relu-module"></span><h2>turret.layers.relu module<a class="headerlink" href="#module-turret.layers.relu" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="turret.layers.relu.relu">
+<code class="descclassname">turret.layers.relu.</code><code class="descname">relu</code><span class="sig-paren">(</span><em>input</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.relu.relu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for ReLU.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by ReLU.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Tensor processed by ReLU.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">tensor(turret.Tensor)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.layers.repeat">
+<span id="turret-layers-repeat-module"></span><h2>turret.layers.repeat module<a class="headerlink" href="#module-turret.layers.repeat" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="turret.layers.repeat.repeat">
+<code class="descclassname">turret.layers.repeat.</code><code class="descname">repeat</code><span class="sig-paren">(</span><em>input</em>, <em>repeats</em>, <em>axis=0</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.repeat.repeat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plugin layer.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensors which will be processed.</li>
+<li><strong>repeats</strong> (<em>int</em>) – The number of repeat.</li>
+<li><strong>axis</strong> (<em>int</em>) – Axis to repeat.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Processed tensor.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.layers.reshape">
+<span id="turret-layers-reshape-module"></span><h2>turret.layers.reshape module<a class="headerlink" href="#module-turret.layers.reshape" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="turret.layers.reshape.reshape">
+<code class="descclassname">turret.layers.reshape.</code><code class="descname">reshape</code><span class="sig-paren">(</span><em>input</em>, <em>shape</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.reshape.reshape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer to reshape only.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – The tensor which will be reshaped.</li>
+<li><strong>shape</strong> (<em>turret.Dimensions</em>) – Reshaped dimensions.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Reshaped tensor.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.layers.rnn">
+<span id="turret-layers-rnn-module"></span><h2>turret.layers.rnn module<a class="headerlink" href="#module-turret.layers.rnn" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="turret.layers.rnn.GRUParameterSet">
+<em class="property">class </em><code class="descclassname">turret.layers.rnn.</code><code class="descname">GRUParameterSet</code><a class="headerlink" href="#turret.layers.rnn.GRUParameterSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The object for parameters(weights, bias) of GRU layer.</p>
+<dl class="docutils">
+<dt>Attribute:</dt>
+<dd>W_update(np.ndarray): The initial input parameter for data.
+U_update(np.ndarray): The initial input parameter for hidden.
+W_reset(np.ndarray): The initial reset parameter for data.
+U_reset(np.ndarray): The initial reset parameter for hidden.
+W_hidden(np.ndarray): The initial hidden parameter for data.
+U_hidden(np.ndarray): The initial hidden parameter for hidden.</dd>
+</dl>
+</dd></dl>
+
+<dl class="class">
+<dt id="turret.layers.rnn.RNNParameterSet">
+<em class="property">class </em><code class="descclassname">turret.layers.rnn.</code><code class="descname">RNNParameterSet</code><span class="sig-paren">(</span><em>W_input=None</em>, <em>U_input=None</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.rnn.RNNParameterSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The object for parameters(weights, bias) of RNN layer.</p>
+<dl class="docutils">
+<dt>Attribute:</dt>
+<dd>W_input(np.ndarray): The initial input parameter for data.
+U_input(np.ndarray): The initial input parameter for hidden.</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.rnn.bias">
+<code class="descclassname">turret.layers.rnn.</code><code class="descname">bias</code><span class="sig-paren">(</span><em>input</em>, <em>b</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.rnn.bias" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for applying bias.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by layer.</li>
+<li><strong>b</strong> (<em>np.ndarray</em>) – The bias.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.rnn.brnn_relu">
+<code class="descclassname">turret.layers.rnn.</code><code class="descname">brnn_relu</code><span class="sig-paren">(</span><em>input</em>, <em>max_seq_len</em>, <em>fwd_weights</em>, <em>bwd_weights</em>, <em>fwd_bias</em>, <em>bwd_bias</em>, <em>mode=&lt;RNNInputMode.LINEAR: 0&gt;</em>, <em>hidden_state=None</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.rnn.brnn_relu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for BiRNN with ReLU.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This function is not recommended. Use brnn_relu_v2.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by layer.</li>
+<li><strong>max_seq_len</strong> (<em>int</em>) – The maximum length of the time sequence.</li>
+<li><strong>fwd_weights</strong> (<em>turret.Weights</em>) – Forward weights.</li>
+<li><strong>bwd_weights</strong> (<em>turret.Weights</em>) – Backward weights.</li>
+<li><strong>fwd_bias</strong> (<em>turret.Weights</em>) – Forward bias.</li>
+<li><strong>bwd_bias</strong> (<em>turret.Weights</em>) – Backward bias.</li>
+<li><strong>mode</strong> (<em>turret.RNNInputMode</em>) – RNN input mode.</li>
+<li><strong>hidden_state</strong> (<em>turret.Tensor</em>) – Initial hidden status of RNN.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.rnn.brnn_tanh">
+<code class="descclassname">turret.layers.rnn.</code><code class="descname">brnn_tanh</code><span class="sig-paren">(</span><em>input</em>, <em>max_seq_len</em>, <em>fwd_weights</em>, <em>bwd_weights</em>, <em>fwd_bias</em>, <em>bwd_bias</em>, <em>mode=&lt;RNNInputMode.LINEAR: 0&gt;</em>, <em>hidden_state=None</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.rnn.brnn_tanh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for BiRNN with tanh.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This function is not recommended. Use brnn_tanh_v2.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by layer.</li>
+<li><strong>max_seq_len</strong> (<em>int</em>) – The maximum length of the time sequence.</li>
+<li><strong>fwd_weights</strong> (<em>turret.Weights</em>) – Forward weights.</li>
+<li><strong>bwd_weights</strong> (<em>turret.Weights</em>) – Backward weights.</li>
+<li><strong>fwd_bias</strong> (<em>turret.Weights</em>) – Forward bias.</li>
+<li><strong>bwd_bias</strong> (<em>turret.Weights</em>) – Backward bias.</li>
+<li><strong>mode</strong> (<em>turret.RNNInputMode</em>) – RNN input mode.</li>
+<li><strong>hidden_state</strong> (<em>turret.Tensor</em>) – Initial hidden status of RNN.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.rnn.gru">
+<code class="descclassname">turret.layers.rnn.</code><code class="descname">gru</code><span class="sig-paren">(</span><em>input</em>, <em>max_seq_len</em>, <em>weights</em>, <em>bias=None</em>, <em>mode=&lt;RNNInputMode.LINEAR: 0&gt;</em>, <em>direction=&lt;RNNDirection.UNIDIRECTION: 0&gt;</em>, <em>hidden_state=None</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.rnn.gru" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for GRU.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This function is not implemented.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by layer.</li>
+<li><strong>max_seq_len</strong> (<em>int</em>) – The maximum length of the time sequence.</li>
+<li><strong>weights</strong> (<em>turret.Weights</em>) – Weights.</li>
+<li><strong>bias</strong> (<em>turret.Weights</em>) – Bias.</li>
+<li><strong>mode</strong> (<em>turret.RNNInputMode</em>) – RNN input mode.</li>
+<li><strong>direction</strong> (<em>turret.RNNDirection</em>) – The direction of RNN.</li>
+<li><strong>hidden_state</strong> (<em>turret.Tensor</em>) – Initial hidden status of RNN.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.rnn.rnn_relu">
+<code class="descclassname">turret.layers.rnn.</code><code class="descname">rnn_relu</code><span class="sig-paren">(</span><em>input</em>, <em>max_seq_len</em>, <em>weights</em>, <em>bias</em>, <em>mode=&lt;RNNInputMode.LINEAR: 0&gt;</em>, <em>hidden_state=None</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.rnn.rnn_relu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for RNN with ReLU.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This function is not recommended. Use rnn_relu_v2.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by layer.</li>
+<li><strong>max_seq_len</strong> (<em>int</em>) – The maximum length of the time sequence.</li>
+<li><strong>weights</strong> (<em>turret.Weights</em>) – Weights.</li>
+<li><strong>bias</strong> (<em>turret.Weights</em>) – Bias.</li>
+<li><strong>mode</strong> (<em>turret.RNNInputMode</em>) – RNN input mode.</li>
+<li><strong>hidden_state</strong> (<em>turret.Tensor</em>) – Initial hidden status of RNN.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.rnn.rnn_tanh">
+<code class="descclassname">turret.layers.rnn.</code><code class="descname">rnn_tanh</code><span class="sig-paren">(</span><em>input</em>, <em>max_seq_len</em>, <em>weights</em>, <em>bias</em>, <em>mode=&lt;RNNInputMode.LINEAR: 0&gt;</em>, <em>hidden_state=None</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.rnn.rnn_tanh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for RNN with tanh.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This function is not recommended. Use rnn_tanh_v2.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by layer.</li>
+<li><strong>max_seq_len</strong> (<em>int</em>) – The maximum length of the time sequence.</li>
+<li><strong>weights</strong> (<em>turret.Weights</em>) – Weights.</li>
+<li><strong>bias</strong> (<em>turret.Weights</em>) – Bias.</li>
+<li><strong>mode</strong> (<em>turret.RNNInputMode</em>) – RNN input mode.</li>
+<li><strong>hidden_state</strong> (<em>turret.Tensor</em>) – Initial hidden status of RNN.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.layers.rnn_v2">
+<span id="turret-layers-rnn-v2-module"></span><h2>turret.layers.rnn_v2 module<a class="headerlink" href="#module-turret.layers.rnn_v2" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="turret.layers.rnn_v2.brnn_relu_v2">
+<code class="descclassname">turret.layers.rnn_v2.</code><code class="descname">brnn_relu_v2</code><span class="sig-paren">(</span><em>input</em>, <em>max_seq_len</em>, <em>fwd_weights</em>, <em>bwd_weights</em>, <em>fwd_bias</em>, <em>bwd_bias</em>, <em>mode=&lt;RNNInputMode.LINEAR: 0&gt;</em>, <em>hidden_state=None</em>, <em>sequence_lengths=None</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.rnn_v2.brnn_relu_v2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for BiRNN with ReLU.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by layer.</li>
+<li><strong>max_seq_len</strong> (<em>int</em>) – The maximum length of the time sequence.</li>
+<li><strong>fwd_weights</strong> (<em>turret.Weights</em>) – Forward weights.</li>
+<li><strong>bwd_weights</strong> (<em>turret.Weights</em>) – Backward weights.</li>
+<li><strong>fwd_bias</strong> (<em>turret.Weights</em>) – Forward bias.</li>
+<li><strong>bwd_bias</strong> (<em>turret.Weights</em>) – Backward bias.</li>
+<li><strong>mode</strong> (<em>turret.RNNInputMode</em>) – RNN input mode.</li>
+<li><strong>hidden_state</strong> (<em>turret.Tensor</em>) – Initial hidden status of BiRNN.</li>
+<li><strong>sequence_lengths</strong> (<em>turret.Tensor</em>) – The sequence lengths specified for
+the BiRNN.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.rnn_v2.brnn_tanh_v2">
+<code class="descclassname">turret.layers.rnn_v2.</code><code class="descname">brnn_tanh_v2</code><span class="sig-paren">(</span><em>input</em>, <em>max_seq_len</em>, <em>fwd_weights</em>, <em>bwd_weights</em>, <em>fwd_bias</em>, <em>bwd_bias</em>, <em>mode=&lt;RNNInputMode.LINEAR: 0&gt;</em>, <em>hidden_state=None</em>, <em>sequence_lengths=None</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.rnn_v2.brnn_tanh_v2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for BiRNN with tanh.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by layer.</li>
+<li><strong>max_seq_len</strong> (<em>int</em>) – The maximum length of the time sequence.</li>
+<li><strong>fwd_weights</strong> (<em>turret.Weights</em>) – Forward weights.</li>
+<li><strong>bwd_weights</strong> (<em>turret.Weights</em>) – Backward weights.</li>
+<li><strong>fwd_bias</strong> (<em>turret.Weights</em>) – Forward bias.</li>
+<li><strong>bwd_bias</strong> (<em>turret.Weights</em>) – Backward bias.</li>
+<li><strong>mode</strong> (<em>turret.RNNInputMode</em>) – RNN input mode.</li>
+<li><strong>hidden_state</strong> (<em>turret.Tensor</em>) – Initial hidden status of BiRNN.</li>
+<li><strong>sequence_lengths</strong> (<em>turret.Tensor</em>) – The sequence lengths specified for
+the BiRNN.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.rnn_v2.rnn_relu_v2">
+<code class="descclassname">turret.layers.rnn_v2.</code><code class="descname">rnn_relu_v2</code><span class="sig-paren">(</span><em>input</em>, <em>max_seq_len</em>, <em>weights</em>, <em>bias</em>, <em>mode=&lt;RNNInputMode.LINEAR: 0&gt;</em>, <em>hidden_state=None</em>, <em>sequence_lengths=None</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.rnn_v2.rnn_relu_v2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for RNN with ReLU.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by layer.</li>
+<li><strong>max_seq_len</strong> (<em>int</em>) – The maximum length of the time sequence.</li>
+<li><strong>weights</strong> (<em>turret.Weights</em>) – Weights.</li>
+<li><strong>bias</strong> (<em>turret.Weights</em>) – Bias.</li>
+<li><strong>mode</strong> (<em>turret.RNNInputMode</em>) – RNN input mode.</li>
+<li><strong>hidden_state</strong> (<em>turret.Tensor</em>) – Initial hidden status of RNN.</li>
+<li><strong>sequence_lengths</strong> (<em>turret.Tensor</em>) – The sequence lengths specified for
+the RNN.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="turret.layers.rnn_v2.rnn_tanh_v2">
+<code class="descclassname">turret.layers.rnn_v2.</code><code class="descname">rnn_tanh_v2</code><span class="sig-paren">(</span><em>input</em>, <em>max_seq_len</em>, <em>weights</em>, <em>bias</em>, <em>mode=&lt;RNNInputMode.LINEAR: 0&gt;</em>, <em>hidden_state=None</em>, <em>sequence_lengths=None</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.rnn_v2.rnn_tanh_v2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for RNN with tanh.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by layer.</li>
+<li><strong>max_seq_len</strong> (<em>int</em>) – The maximum length of the time sequence.</li>
+<li><strong>weights</strong> (<em>turret.Weights</em>) – Weights.</li>
+<li><strong>bias</strong> (<em>turret.Weights</em>) – Bias.</li>
+<li><strong>mode</strong> (<em>turret.RNNInputMode</em>) – RNN input mode.</li>
+<li><strong>hidden_state</strong> (<em>turret.Tensor</em>) – Initial hidden status of RNN.</li>
+<li><strong>sequence_lengths</strong> (<em>turret.Tensor</em>) – The sequence lengths specified for
+the RNN.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.layers.shuffle">
+<span id="turret-layers-shuffle-module"></span><h2>turret.layers.shuffle module<a class="headerlink" href="#module-turret.layers.shuffle" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="turret.layers.shuffle.shuffle">
+<code class="descclassname">turret.layers.shuffle.</code><code class="descname">shuffle</code><span class="sig-paren">(</span><em>input</em>, <em>order</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.shuffle.shuffle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer to shuffle.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – The tensor which will be processed by layer.</li>
+<li><strong>order</strong> (<em>tuple</em>) – The permutation applied by the first transpose
+operation.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Tensor processed by layer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.layers.sigmoid">
+<span id="turret-layers-sigmoid-module"></span><h2>turret.layers.sigmoid module<a class="headerlink" href="#module-turret.layers.sigmoid" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="turret.layers.sigmoid.sigmoid">
+<code class="descclassname">turret.layers.sigmoid.</code><code class="descname">sigmoid</code><span class="sig-paren">(</span><em>input</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.sigmoid.sigmoid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for sigmoid.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by sigmoid.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Tensor processed by sigmoid.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">tensor(turret.Tensor)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.layers.split">
+<span id="turret-layers-split-module"></span><h2>turret.layers.split module<a class="headerlink" href="#module-turret.layers.split" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="turret.layers.split.split">
+<code class="descclassname">turret.layers.split.</code><code class="descname">split</code><span class="sig-paren">(</span><em>input</em>, <em>indices_or_sections</em>, <em>axis</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.split.split" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer to split the tensor.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be splited.</li>
+<li><strong>indices_or_sections</strong> (<em>tuple</em>) – The indices or sections to split.</li>
+<li><strong>axis</strong> (<em>int</em>) – The axis to be split.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The splited tensor.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tensor(turret.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.layers.tanh">
+<span id="turret-layers-tanh-module"></span><h2>turret.layers.tanh module<a class="headerlink" href="#module-turret.layers.tanh" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="turret.layers.tanh.tanh">
+<code class="descclassname">turret.layers.tanh.</code><code class="descname">tanh</code><span class="sig-paren">(</span><em>input</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.layers.tanh.tanh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for tanh.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>input</strong> (<em>turret.Tensor</em>) – Tensor which will be processed by tanh.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Tensor processed by tanh.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">tensor(turret.Tensor)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.layers">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-turret.layers" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Fixstars Corp.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

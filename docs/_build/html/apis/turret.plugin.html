@@ -1,0 +1,561 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>turret.plugin package &mdash; Turret 4.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Turret
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">turret.plugin package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-turret.plugin.auto_register">turret.plugin.auto_register module</a></li>
+<li><a class="reference internal" href="#module-turret.plugin.cy_plugin_factory_proxy">turret.plugin.cy_plugin_factory_proxy module</a></li>
+<li><a class="reference internal" href="#module-turret.plugin.cy_plugin_proxy">turret.plugin.cy_plugin_proxy module</a></li>
+<li><a class="reference internal" href="#module-turret.plugin.plugin_base">turret.plugin.plugin_base module</a></li>
+<li><a class="reference internal" href="#module-turret.plugin.plugin_factory">turret.plugin.plugin_factory module</a></li>
+<li><a class="reference internal" href="#module-turret.plugin.plugin_factory_proxy_bridge">turret.plugin.plugin_factory_proxy_bridge module</a></li>
+<li><a class="reference internal" href="#module-turret.plugin.plugin_proxy_bridge">turret.plugin.plugin_proxy_bridge module</a></li>
+<li><a class="reference internal" href="#module-turret.plugin.stream">turret.plugin.stream module</a></li>
+<li><a class="reference internal" href="#module-turret.plugin.temporary_stream_context">turret.plugin.temporary_stream_context module</a></li>
+<li><a class="reference internal" href="#module-turret.plugin">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Turret</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>turret.plugin package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/apis/turret.plugin.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="turret-plugin-package">
+<h1>turret.plugin package<a class="headerlink" href="#turret-plugin-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-turret.plugin.auto_register">
+<span id="turret-plugin-auto-register-module"></span><h2>turret.plugin.auto_register module<a class="headerlink" href="#module-turret.plugin.auto_register" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="turret.plugin.auto_register.auto_register">
+<code class="descclassname">turret.plugin.auto_register.</code><code class="descname">auto_register</code><span class="sig-paren">(</span><em>cls</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.plugin.auto_register.auto_register" title="Permalink to this definition">¶</a></dt>
+<dd><p>The function for decorator. Users need not to use.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.plugin.cy_plugin_factory_proxy">
+<span id="turret-plugin-cy-plugin-factory-proxy-module"></span><h2>turret.plugin.cy_plugin_factory_proxy module<a class="headerlink" href="#module-turret.plugin.cy_plugin_factory_proxy" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="turret.plugin.cy_plugin_factory_proxy.CyPluginFactoryProxy">
+<em class="property">class </em><code class="descclassname">turret.plugin.cy_plugin_factory_proxy.</code><code class="descname">CyPluginFactoryProxy</code><a class="headerlink" href="#turret.plugin.cy_plugin_factory_proxy.CyPluginFactoryProxy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="turret.plugin.cy_plugin_factory_proxy.PluginFactoryProxy">
+<em class="property">class </em><code class="descclassname">turret.plugin.cy_plugin_factory_proxy.</code><code class="descname">PluginFactoryProxy</code><a class="headerlink" href="#turret.plugin.cy_plugin_factory_proxy.PluginFactoryProxy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.plugin.cy_plugin_proxy">
+<span id="turret-plugin-cy-plugin-proxy-module"></span><h2>turret.plugin.cy_plugin_proxy module<a class="headerlink" href="#module-turret.plugin.cy_plugin_proxy" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="turret.plugin.cy_plugin_proxy.CyPluginProxy">
+<em class="property">class </em><code class="descclassname">turret.plugin.cy_plugin_proxy.</code><code class="descname">CyPluginProxy</code><a class="headerlink" href="#turret.plugin.cy_plugin_proxy.CyPluginProxy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="turret.plugin.cy_plugin_proxy.PluginProxy">
+<em class="property">class </em><code class="descclassname">turret.plugin.cy_plugin_proxy.</code><code class="descname">PluginProxy</code><a class="headerlink" href="#turret.plugin.cy_plugin_proxy.PluginProxy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The proxy object of Turret PluginBase.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>plugin</strong> (<em>turret.PluginBase</em>) – The object of PluginBase</li>
+<li><strong>proxy_params</strong> (<em>dict</em>) – The parameter of plugin proxy.”num_inputs”(int)
+and “num_outputs”(int) are required.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="turret.plugin.cy_plugin_proxy.PluginProxy.register_stream">
+<code class="descname">register_stream</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.plugin.cy_plugin_proxy.PluginProxy.register_stream" title="Permalink to this definition">¶</a></dt>
+<dd><p>Register cuda stream on the instance.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>stream</strong> (<em>cuda.Stream</em>) – The cuda stream to be used on the instance.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="turret.plugin.cy_plugin_proxy.PluginProxy.unregister_stream">
+<code class="descname">unregister_stream</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.plugin.cy_plugin_proxy.PluginProxy.unregister_stream" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unregister cuda stream from the instance.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>stream</strong> (<em>cuda.Stream</em>) – The cuda stream to be used on the instance.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.plugin.plugin_base">
+<span id="turret-plugin-plugin-base-module"></span><h2>turret.plugin.plugin_base module<a class="headerlink" href="#module-turret.plugin.plugin_base" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="turret.plugin.plugin_base.PluginBase">
+<em class="property">class </em><code class="descclassname">turret.plugin.plugin_base.</code><code class="descname">PluginBase</code><a class="headerlink" href="#turret.plugin.plugin_base.PluginBase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The superclass to create the plugin of turret.</p>
+<dl class="method">
+<dt id="turret.plugin.plugin_base.PluginBase.configure">
+<code class="descname">configure</code><span class="sig-paren">(</span><em>in_dims</em>, <em>out_dims</em>, <em>max_batch_size</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.plugin.plugin_base.PluginBase.configure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Configure the dimensions and the maximum of batch size.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>in_dims</strong> – The dimension of inputs.</li>
+<li><strong>out_dims</strong> – The dimension of outputs.</li>
+<li><strong>max_batch_size</strong> (<em>int</em>) – The maximum of batch size.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="turret.plugin.plugin_base.PluginBase.deserialize">
+<em class="property">classmethod </em><code class="descname">deserialize</code><span class="sig-paren">(</span><em>stream</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.plugin.plugin_base.PluginBase.deserialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deserialize the plugin using a stream.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>stream</strong> (<em>binary stream</em>) – A stream to read serialized engine.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="turret.plugin.plugin_base.PluginBase.enqueue">
+<code class="descname">enqueue</code><span class="sig-paren">(</span><em>batch_size</em>, <em>inputs</em>, <em>outputs</em>, <em>workspace</em>, <em>stream</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.plugin.plugin_base.PluginBase.enqueue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Asynchronously execute inference on a batch.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This is a abstractmethod. Be sure to implement on the subclass.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>batch_size</strong> (<em>int</em>) – The batch size.</li>
+<li><strong>inputs</strong> – The input data.</li>
+<li><strong>outputs</strong> – The buffer to output data.</li>
+<li><strong>workspace</strong> – The workspace.</li>
+<li><strong>stream</strong> (<em>cuda.Stream</em>) – The cuda stream.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="turret.plugin.plugin_base.PluginBase.get_num_outputs">
+<code class="descname">get_num_outputs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.plugin.plugin_base.PluginBase.get_num_outputs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the number of outputs.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This is a abstractmethod. Be sure to implement on the subclass.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The number of outputs.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">num_outputs(str)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="turret.plugin.plugin_base.PluginBase.get_output_dimensions">
+<code class="descname">get_output_dimensions</code><span class="sig-paren">(</span><em>in_dims</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.plugin.plugin_base.PluginBase.get_output_dimensions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the dimension of outputs.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This is a abstractmethod. Be sure to implement on the subclass.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>in_dims</strong> – The dimension of inputs.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The dimension of outputs.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">num_outputs(str)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="turret.plugin.plugin_base.PluginBase.get_workspace_size">
+<code class="descname">get_workspace_size</code><span class="sig-paren">(</span><em>max_batch_size</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.plugin.plugin_base.PluginBase.get_workspace_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the workspace size.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>max_batch_size</strong> (<em>int</em>) – The maximum of batch size.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The workspace size.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">workspace_size(int)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="turret.plugin.plugin_base.PluginBase.initialize">
+<code class="descname">initialize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.plugin.plugin_base.PluginBase.initialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize the plugin.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="turret.plugin.plugin_base.PluginBase.module_name">
+<em class="property">classmethod </em><code class="descname">module_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.plugin.plugin_base.PluginBase.module_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the plugin name.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This is a abstractmethod. Be sure to implement on the subclass.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The plugin name.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">module_name(str)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="turret.plugin.plugin_base.PluginBase.serialize">
+<code class="descname">serialize</code><span class="sig-paren">(</span><em>stream</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.plugin.plugin_base.PluginBase.serialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the binary to a stream.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>stream</strong> (<em>binary stream</em>) – A stream to write serialized engine.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="turret.plugin.plugin_base.PluginBase.terminate">
+<code class="descname">terminate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.plugin.plugin_base.PluginBase.terminate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Terminate the plugin.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.plugin.plugin_factory">
+<span id="turret-plugin-plugin-factory-module"></span><h2>turret.plugin.plugin_factory module<a class="headerlink" href="#module-turret.plugin.plugin_factory" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="turret.plugin.plugin_factory.PluginFactory">
+<em class="property">class </em><code class="descclassname">turret.plugin.plugin_factory.</code><code class="descname">PluginFactory</code><a class="headerlink" href="#turret.plugin.plugin_factory.PluginFactory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The class of custom layer factory.</p>
+<dl class="method">
+<dt id="turret.plugin.plugin_factory.PluginFactory.create">
+<code class="descname">create</code><span class="sig-paren">(</span><em>stream</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.plugin.plugin_factory.PluginFactory.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the plugin from plugin factory.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>stream</strong> (<em>binary stream</em>) – The binary stream to deserialize plugin.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The created plugin.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">proxy(<a class="reference internal" href="#turret.plugin.cy_plugin_proxy.PluginProxy" title="turret.plugin.cy_plugin_proxy.PluginProxy">PluginProxy</a>)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="turret.plugin.plugin_factory.PluginFactory.register_plugin">
+<code class="descname">register_plugin</code><span class="sig-paren">(</span><em>klass</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.plugin.plugin_factory.PluginFactory.register_plugin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Register the plugin on the  plugin factory.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>klass</strong> – The plugin.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.plugin.plugin_factory_proxy_bridge">
+<span id="turret-plugin-plugin-factory-proxy-bridge-module"></span><h2>turret.plugin.plugin_factory_proxy_bridge module<a class="headerlink" href="#module-turret.plugin.plugin_factory_proxy_bridge" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-turret.plugin.plugin_proxy_bridge">
+<span id="turret-plugin-plugin-proxy-bridge-module"></span><h2>turret.plugin.plugin_proxy_bridge module<a class="headerlink" href="#module-turret.plugin.plugin_proxy_bridge" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-turret.plugin.stream">
+<span id="turret-plugin-stream-module"></span><h2>turret.plugin.stream module<a class="headerlink" href="#module-turret.plugin.stream" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="turret.plugin.stream.PluginStream">
+<em class="property">class </em><code class="descclassname">turret.plugin.stream.</code><code class="descname">PluginStream</code><span class="sig-paren">(</span><em>main_stream</em>, <em>stream_registory</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.plugin.stream.PluginStream" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The class for internal processing. Users need not to use.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="turret.plugin.stream.StreamRegistory">
+<em class="property">class </em><code class="descclassname">turret.plugin.stream.</code><code class="descname">StreamRegistory</code><a class="headerlink" href="#turret.plugin.stream.StreamRegistory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The class for internal processing. Users need not to use.</p>
+<dl class="method">
+<dt id="turret.plugin.stream.StreamRegistory.register">
+<code class="descname">register</code><span class="sig-paren">(</span><em>stream</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.plugin.stream.StreamRegistory.register" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="turret.plugin.stream.StreamRegistory.unregister">
+<code class="descname">unregister</code><span class="sig-paren">(</span><em>stream</em><span class="sig-paren">)</span><a class="headerlink" href="#turret.plugin.stream.StreamRegistory.unregister" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.plugin.temporary_stream_context">
+<span id="turret-plugin-temporary-stream-context-module"></span><h2>turret.plugin.temporary_stream_context module<a class="headerlink" href="#module-turret.plugin.temporary_stream_context" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="turret.plugin.temporary_stream_context.TemporaryStreamContext">
+<em class="property">class </em><code class="descclassname">turret.plugin.temporary_stream_context.</code><code class="descname">TemporaryStreamContext</code><a class="headerlink" href="#turret.plugin.temporary_stream_context.TemporaryStreamContext" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The class for internal processing. Users need not to use.</p>
+<dl class="method">
+<dt id="turret.plugin.temporary_stream_context.TemporaryStreamContext.enter">
+<code class="descname">enter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.plugin.temporary_stream_context.TemporaryStreamContext.enter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="turret.plugin.temporary_stream_context.TemporaryStreamContext.exit">
+<code class="descname">exit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turret.plugin.temporary_stream_context.TemporaryStreamContext.exit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-turret.plugin">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-turret.plugin" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Fixstars Corp.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

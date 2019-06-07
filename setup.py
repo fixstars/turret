@@ -35,7 +35,7 @@ class PyTest(TestCommand):
         sys.exit(errno)
 
 setup(name="turret",
-      version="4.0.1",
+      version="5.0.0",
       cmdclass={
           "build_ext": cpp_build_ext,
           "test": PyTest

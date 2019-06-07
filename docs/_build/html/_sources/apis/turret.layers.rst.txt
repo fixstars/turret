@@ -1,0 +1,174 @@
+turret.layers package
+=====================
+
+Submodules
+----------
+
+turret.layers.average\_pooling\_2d module
+-----------------------------------------
+
+.. automodule:: turret.layers.average_pooling_2d
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.layers.basic\_math module
+--------------------------------
+
+.. automodule:: turret.layers.basic_math
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.layers.batch\_normalization module
+-----------------------------------------
+
+.. automodule:: turret.layers.batch_normalization
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.layers.bias module
+-------------------------
+
+.. automodule:: turret.layers.bias
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.layers.builtin module
+----------------------------
+
+.. automodule:: turret.layers.builtin
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.layers.leaky\_relu module
+--------------------------------
+
+.. automodule:: turret.layers.leaky_relu
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.layers.lstm module
+-------------------------
+
+.. automodule:: turret.layers.lstm
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.layers.lstm\_v2 module
+-----------------------------
+
+.. automodule:: turret.layers.lstm_v2
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.layers.max\_average\_blend\_pooling\_2d module
+-----------------------------------------------------
+
+.. automodule:: turret.layers.max_average_blend_pooling_2d
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.layers.max\_pooling\_2d module
+-------------------------------------
+
+.. automodule:: turret.layers.max_pooling_2d
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.layers.pad module
+------------------------
+
+.. automodule:: turret.layers.pad
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.layers.relu module
+-------------------------
+
+.. automodule:: turret.layers.relu
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.layers.repeat module
+---------------------------
+
+.. automodule:: turret.layers.repeat
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.layers.reshape module
+----------------------------
+
+.. automodule:: turret.layers.reshape
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.layers.rnn module
+------------------------
+
+.. automodule:: turret.layers.rnn
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.layers.rnn\_v2 module
+----------------------------
+
+.. automodule:: turret.layers.rnn_v2
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.layers.shuffle module
+----------------------------
+
+.. automodule:: turret.layers.shuffle
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.layers.sigmoid module
+----------------------------
+
+.. automodule:: turret.layers.sigmoid
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.layers.split module
+--------------------------
+
+.. automodule:: turret.layers.split
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+turret.layers.tanh module
+-------------------------
+
+.. automodule:: turret.layers.tanh
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: turret.layers
+    :members:
+    :undoc-members:
+    :show-inheritance:
